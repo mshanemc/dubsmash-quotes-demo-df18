@@ -1,8 +1,9 @@
 {
-  "name": "dubsmash-quotes",
+  "name": "dubsmash-quotes-demo",
   "scripts": {
   },
   "env": {
+
   },
   "formation": {
     "web": {
