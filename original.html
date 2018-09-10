@@ -1,751 +1,725 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en">
 
-<head></head>
+<head>
+  <meta charSet="utf-8" class="next-head" />
+  <link rel="preload" href="/_next/6326fa3d-f9ad-4ccd-a5ba-ea38a0c4bf34/page/index.js" as="script" />
+  <link rel="preload" href="/_next/6326fa3d-f9ad-4ccd-a5ba-ea38a0c4bf34/page/_app.js" as="script" />
+  <link rel="preload" href="/_next/6326fa3d-f9ad-4ccd-a5ba-ea38a0c4bf34/page/_error.js" as="script" />
+  <link rel="preload" href="/_next/static/commons/main-81dcdf7112e2502086e4.js" as="script" />
+  <title>Quotes by Dubsmash</title>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="google-site-verification" content="p2EDL4Q7vTpNKPnZCP34P4ORdTYDs1qRZuD1c-EM_co" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
+  <link rel="manifest" href="/static/site.webmanifest" />
+  <link rel="mask-icon" href="/static/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="shortcut icon" href="/static/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-config" content="/static/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <script type="text/javascript" async="" src="https://platform.twitter.com/widgets.js"></script>
+</head>
 
-<body class='bodyBackTopo'>
-
-  <div class='main-wrapper' id='inv-wrapper'>
-    <div id='container'>
-      <div id='header'>
-        <div id='header_block'>
-          <a class='tealium-track' data-tealium-event='header_inv_logo_track' href='/'>
-            <div id='logo'></div>
-          </a>
-          <div id='for-links'>
-            <a target="_blank" class="tealium-track" data-tealium-event="header_for_patients_track" href="https://my.invisalign.com">For
-              Patients</a>
-            <span class='seperator'>&#124;</span>
-            <a target="_blank" class="tealium-track" data-tealium-event="header_for_doctors_track" href="https://vip.invisalign.com/v3/login.action">For
-              Doctors</a>
-          </div>
-          <div id='nav'>
-            <a class='nav_but navFontMed tealium-track outOfSmile' data-tealium-event='header_iirfm_form_track' href='/get-started/smile-assessment'
-              id='nav1'>Take the Smile Assessment</a>
-            <a class='tealium-track nav_but navFontMed outOfSmile' data-tealium-event='leads_to_fad_zip_search_track'
-              href='/get-started/find-a-doctor' id='nav2'>Find a Doctor:</a>
-            <span class='form-inline find-a-doctor culdesac' id='findadoctor2'>
-              <div class='form-group input-wrap-3 wrap3'>
-                <input class='dr-zip-3 form-control' id='headzip' maxlength='5' placeholder='ZIP' title='ZIP' type='tel'
-                  value=''>
-                <span class='get-start'>
-                  <a class='tealium-track find-dr-3 find-dr' data-tealium-event='leads_to_fad_zip_search_3_track' id='nav-find-dr'>Go</a>
-                </span>
-              </div>
-            </span>
-            <span class='nav_but menu_button' id='mainMenuButton' onclick='openNav();'>
-              <div class='tealium-track nav-icon navFontMed navDesk' data-tealium-event='header_drops_down_menu_track'>
-                Menu
-                <span class='hamburgerCustomizedTopMain'></span>
-                <span class='hamburgerCustomizedBottomMain'></span>
-              </div>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <table id='tableipad'>
-    <tr>
-      <td>
-        <a href='/get-started/smile-assessment'>Take the Smile Assessment</a>
-      </td>
-      <td class='culdesac'>
-        <a href='/get-started/find-a-doctor'>Find a Doctor</a>
-      </td>
-    </tr>
-  </table>
-
-  <div class='header-container-popup sidenav' id='mySidenav'>
-    <div id='head_logo'>
-      <a href='/' id='logolink'>
-        <div id='logo1'></div>
-      </a>
-      <div class='close_button' id='close_button'>
-        <a class='closebtn nav-icon navFontMed close-icon' href='javascript:void(0)' id='closebtn' onclick='closeNav()'>
-          Menu
-          <span class='hamburgerCustomizedTop'></span>
-          <span class='hamburgerCustomizedBottom'></span>
-          <!-- /%span.crossCustomizedLeft -->
-          <!-- /%span.crossCustomizedRight -->
-        </a>
-      </div>
-    </div>
-    <div class='left-block'>
-      <a class='mainItem tealium-track samp' data-tealium-event='menu_treatable_cases_track' href='#' id='Treatable_Cases'
-        onclick='treatableCases()'>Treatable Cases</a>
-      <a class='mainItem tealium-track' href='#' id='Teens_and_Adults' onclick='Teens_and_Adults()'>Invisalign for
-        Teens and Adults</a>
-      <a class='mainItem tealium-track' data-tealium-event='menu_howinvworks_track' href='#' id='How_Invisalign_Works'
-        onclick='How_Invisalign_Works()'>How Invisalign Works</a>
-      <a class='mainItem tealium-track' data-tealium-event='menu_cost_track' href='#' id='Cost' onclick='Cost()'>Cost</a>
-      <a class='mainItem' href='#' id='Get_Started' onclick='Get_Started()'>Get Started</a>
-      <a class='mainItem tealium-track' data-tealium-event='menu_theinvdiff_track' href='#' id='The_Invisalign_Difference'
-        onclick='The_Invisalign_Difference()'>The Invisalign Difference</a>
-    </div>
-    <div class='right-block' id='right-block'>
-      <div class='sublink_block_1'>
-        <div class='submenu sub_treatablecases' id='sub_treatablecases'>
-          <a href='/treatable-cases' id='overview_teeth'>Overview</a>
-          <a href='/treatable-cases/crowded-teeth' id='Croweded_Teeth'>Crowded Teeth</a>
-          <a href='/treatable-cases/overbite' id='Overbite'>Overbite</a>
-          <a href='/treatable-cases/underbite' id='Underbite'>Underbite</a>
-          <a href='/treatable-cases/crossbite' id='Crossbite'>Crossbite</a>
-          <a href='/treatable-cases/gap-teeth' id='Gap_Teeth'>Gap Teeth</a>
-          <a href='/treatable-cases/open-bite' id='Open_Bite'>Open Bite</a>
-          <a href='/treatable-cases/generally-straighter-teeth' id='Straighter_Teeth'>Generally Straighter Teeth</a>
-        </div>
-        <div class='submenu sub_Teens_and_Adults' id='sub_Teens_and_Adults'>
-          <a href='/braces-for-teens-and-adults/teen' id='inv_teen'>Teen</a>
-          <a href='/braces-for-teens-and-adults/parent' id='inv_adult'>Parent</a>
-          <a href='/braces-for-teens-and-adults/adult' id='inv_adult'>Adult</a>
-        </div>
-        <div class='submenu sub_How_Invisalign_Works' id='sub_How_Invisalign_Works'>
-          <a href='/how-invisalign-works'>Overview</a>
-          <a href='/how-invisalign-works/treatment-plan'>How Your Treatment Plan Is Made</a>
-          <a href='/how-invisalign-works/how-custom-aligners-are-made'>How Your Aligners Are Made</a>
-          <a href='/how-invisalign-works/starting-treatment'>Getting Your First Aligners</a>
-          <a href='/how-invisalign-works/living-with-invisalign'>Living With Invisalign Clear Aligners</a>
-          <a href='/how-invisalign-works/success-stories'>Success Stories</a>
-          <a href='/how-invisalign-works/comparison-chart'>Compare Treatment Options</a>
-        </div>
-        <div class='submenu sub_Cost' id='sub_Cost'>
-          <a href='/invisalign-cost'>Overview</a>
-          <a href='/invisalign-cost/how-to-pay-for-invisalign'>Ways to Pay for Invisalign Treatment</a>
-        </div>
-        <div class='submenu sub_Get_Started' id='sub_Get_Started'>
-          <a class='tealium-track' data-tealium-event='menu_get_started_ra_track' href='/get-started/request-an-appointment'>Request
-            an Appointment</a>
-          <a class='tealium-track' data-tealium-event='menu_get_started_fad_track' href='/get-started/find-a-doctor'>Find
-            a Doctor</a>
-          <a class='tealium-track' data-tealium-event='menu_get_started_sa_track' href='/get-started/smile-assessment'>Take
-            the Smile Assessment</a>
-          <a class='tealium-track' data-tealium-event='menu_get_started_contact_us_track' href='/get-started/contact-us'>Contact
-            Us</a>
-          <a class='tealium-track' data-tealium-event='menu_get_started_qas_doct_track' href='/get-started/questions-for-your-doctor'>Questions
-            to Ask Your Doctor</a>
-        </div>
-        <div class='submenu sub_The_Invisalign_Difference' id='sub_The_Invisalign_Difference'>
-          <a href='/the-invisalign-difference'>Overview</a>
-          <a href='/the-invisalign-difference/invisalign-aligners'>Invisalign Clear Aligners</a>
-          <a href='/the-invisalign-difference/itero-3d-scanner'>iTero<sup>&reg;</sup> Element Scanner</a>
-          <a href='/the-invisalign-difference/clincheck-software'>ClinCheck<sup>&reg;</sup> Software</a>
-          <a href='/the-invisalign-difference/smarttrack-aligner-material'>SmartTrack<sup>&reg;</sup> Material</a>
-          <a href='/the-invisalign-difference/smartforce-attachments'>SmartForce<sup>&reg;</sup> Attachments</a>
-          <a href='/the-invisalign-difference/vivera-retainers'>Vivera<sup>&reg;</sup> Retainers</a>
-        </div>
-      </div>
-      <div class='sublink_block_2' id='sublink_block_2'>
-        <div id='treatablecases_teeth'>
-          <a href="/get-started/doctor-request-appointment"><img class="Croweded_Teeth" id="Crowded_Teeth_img" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/Inivisalign_icon_TC_crowded_teeth.svg"
-              alt="Inivisalign icon tc crowded teeth" /></a>
-          <a href="/get-started/doctor-request-appointment"><img class="Overbite" id="Overbite_img" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/Inivisalign_icon_TC_overbite.svg"
-              alt="Inivisalign icon tc overbite" /></a>
-          <a href="/get-started/doctor-request-appointment"><img class="Underbite" id="Underbite_img" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/Inivisalign_icon_TC_underbite.svg"
-              alt="Inivisalign icon tc underbite" /></a>
-          <a href="/get-started/doctor-request-appointment"><img class="Crossbite" id="Crossbite_img" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/Inivisalign_icon_TC_crossbite.svg"
-              alt="Inivisalign icon tc crossbite" /></a>
-          <a href="/get-started/doctor-request-appointment"><img class="Gap_Teeth" id="Gap_Teeth_img" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/Inivisalign_icon_TC_gap_teeth.svg"
-              alt="Inivisalign icon tc gap teeth" /></a>
-          <a href="/get-started/doctor-request-appointment"><img class="Open_Bite" id="Open_Bite_img" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/Inivisalign_icon_TC_open_bite.svg"
-              alt="Inivisalign icon tc open bite" /></a>
-          <a href="/get-started/doctor-request-appointment"><img class="Straighter" id="Straighter_img" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/Invisalign_icon_TC_generally_straighter.svg"
-              alt="Invisalign icon tc generally straighter" /></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class='mobile-header' id='mobile-top'>
-    <div class='fix'>
-      <div class='mobilelogo'>
-        <a class='tealium-track' data-tealium-event='header-inv-logo-track' href='/'>
-          <img width="180" height="auto" src="//dv2c9ihs6hqjp.cloudfront.net/assets/svg/invisalign_logo_white-5efbed8ec2d726166690c1c9283db89c10753bb613aa9abe47120cb2d2b50d7f.svg"
-            alt="Invisalign logo white" />
-        </a>
-      </div>
-      <div class='mobile-menu mobile-menu-hide'>
-        <a class='addBodyClass' href='javascript:void(0);' onclick='$(&#39;.submenu-mobile, #inv-wrapper, .body-wrapper, #table-mobile, .mobile-menu-hide,.footer &#39;).toggleClass(&#39;iv-hidden&#39;); openNavMob();'>
-          <div class='nav-icon'>
-            <span class='headerMenuFix'>Menu</span>
-            <span class='hamburgerMobCustomizedTop'></span>
-            <span class='hamburgerMobCustomizedBottom'></span>
-          </div>
-        </a>
-      </div>
-    </div>
-    <table id='table-mobile'>
-      <tr>
-        <td class='sticky-link1'>
-          <a class='mobile-tealium-track' data-tealium-event='Mobile_SA' href='/get-started/smile-assessment'>Take the
-            Smile Assessment</a>
-        </td>
-        <td class='sticky-link2 culdesac'>
-          <a class='mobile-tealium-track' data-tealium-event='Mobile_FAD' href='/get-started/find-a-doctor'>Find a
-            Doctor</a>
-        </td>
-        <td class='sticky-link3'>
-          <a class='sticky-link3-a'>Reserve your spot</a>
-        </td>
-        <td class='sticky-link4'>
-          <a href='/get-started/invisalign-smileview'>Try the new Invisalign<sup>&reg;</sup> SmileView<sup>&trade;</sup>
-            tool</a>
-        </td>
-      </tr>
-    </table>
-  </div>
-  <div class='submenu-mobile iv-hidden'>
-    <div class='gray-box' id='gray-box'>
-      <div class='mobile-header1'>
-        <div class='fix'>
-          <div class='mobilelogo'>
-            <a href='/'>
-              <img width="180" height="auto" src="//dv2c9ihs6hqjp.cloudfront.net/assets/svg/invisalign_logo_white-5efbed8ec2d726166690c1c9283db89c10753bb613aa9abe47120cb2d2b50d7f.svg"
-                alt="Invisalign logo white" />
-            </a>
-          </div>
-          <div class='mobile-menu closeM'>
-            <a class='remBodyClass' href='javascript:void(0);' onclick='$(&#39;.submenu-mobile, #inv-wrapper, .body-wrapper, #table-mobile, .mobile-menu-hide,.footer&#39;).toggleClass(&#39;iv-hidden&#39;); closeNavMob();'>
-              <div class='nav-icon close-icon'>
-                <span>Menu</span>
-                <span class='hamburgerMobCustomizedTop'></span>
-                <span class='hamburgerMobCustomizedBottom'></span>
-                <!-- /%span.crossMobCustomizedLeft -->
-                <!-- /%span.crossMobCustomizedRight -->
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class='mobile-header-links panel-group' id='accordion'>
-        <div class='panel'>
-          <div class='panel-heading'>
-            <div class='panel-title'>
-              <a class='btn btn-info toggleTrack' data-parent='#accordion' data-toggle='collapse' href='#TreatableCases'
-                id='TreatableCasesBtn'>
-                <span>Treatable Cases</span>
-                <span class='imagePlus'></span>
-                <div class='expand expand-plus' id='expandSign'></div>
-              </a>
-            </div>
-          </div>
-          <div class='panel-collapse collapse' id='TreatableCases'>
-            <div class='panel-body'>
-              <a href='/treatable-cases'>Overview</a>
-              <a href='/treatable-cases/crowded-teeth'>Crowded Teeth</a>
-              <a href='/treatable-cases/overbite'>Overbite</a>
-              <a href='/treatable-cases/underbite'>Underbite</a>
-              <a href='/treatable-cases/crossbite'>Crossbite</a>
-              <a href='/treatable-cases/gap-teeth'>Gap Teeth</a>
-              <a href='/treatable-cases/open-bite'>Open Bite</a>
-              <a href='/treatable-cases/generally-straighter-teeth'>Generally Straighter Teeth</a>
-            </div>
-          </div>
-        </div>
-        <div class='panel'>
-          <div class='panel-heading'>
-            <div class='panel-title'>
-              <a class='btn btn-info toggleTrack' data-parent='#accordion' data-toggle='collapse' href='#TeensandAdults'
-                id='TeensandAdultsbtn'>
-                <span>Invisalign for Teens<br class="desHide"> and Adults</span>
-                <span class='imagePlus teenplus'></span>
-                <div class='expand expand-plus'></div>
-              </a>
-            </div>
-          </div>
-          <div class='panel-collapse collapse' id='TeensandAdults'>
-            <div class='panel-body'>
-              <a href='/braces-for-teens-and-adults/teen' id='inv_teen'>Teen</a>
-              <a href='/braces-for-teens-and-adults/parent' id='inv_adult'>Parent</a>
-              <a href='/braces-for-teens-and-adults/adult' id='inv_adult'>Adult</a>
-            </div>
-          </div>
-        </div>
-        <div class='panel'>
-          <div class='panel-heading'>
-            <div class='panel-title'>
-              <a class='btn btn-info toggleTrack' data-parent='#accordion' data-toggle='collapse' href='#HowInvisalignWorks'
-                id='HowInvisalignWorksBtn'>
-                <span>How Invisalign Works</span>
-                <span class='imagePlus'></span>
-                <div class='expand expand-plus'></div>
-              </a>
-            </div>
-          </div>
-          <div class='panel-collapse collapse' id='HowInvisalignWorks'>
-            <div class='panel-body'>
-              <a href='/how-invisalign-works'>Overview</a>
-              <a href='/how-invisalign-works/treatment-plan'>How Your Treatment Plan Is Made</a>
-              <a href='/how-invisalign-works/how-custom-aligners-are-made'>How Your Aligners Are Made</a>
-              <a href='/how-invisalign-works/starting-treatment'>Getting Your First Aligners</a>
-              <a href='/how-invisalign-works/living-with-invisalign'>Living With Invisalign Clear Aligners</a>
-              <a href='/how-invisalign-works/success-stories'>Success Stories</a>
-              <a href='/how-invisalign-works/comparison-chart'>Compare Treatment Options</a>
-            </div>
-          </div>
-        </div>
-        <div class='panel'>
-          <div class='panel-heading'>
-            <div class='panel-title'>
-              <a class='btn btn-info toggleTrack' data-parent='#accordion' data-toggle='collapse' href='#cost' id='costBtn'>
-                <span>Cost</span>
-                <span class='imagePlus'></span>
-                <div class='expand expand-plus'></div>
-              </a>
-            </div>
-          </div>
-          <div class='panel-collapse collapse' id='cost'>
-            <div class='panel-body'>
-              <a href='/invisalign-cost'>Overview</a>
-              <a href='/invisalign-cost/how-to-pay-for-invisalign'>Ways to Pay for Invisalign Treatment</a>
-            </div>
-          </div>
-        </div>
-        <div class='panel'>
-          <div class='panel-heading'>
-            <div class='panel-title'>
-              <a class='btn btn-info toggleTrack' data-parent='#accordion' data-toggle='collapse' href='#GetStarted' id='GetStartedBtn'>
-                <span>Get Started</span>
-                <span class='imagePlus'></span>
-                <div class='expand expand-plus'></div>
-              </a>
-            </div>
-          </div>
-          <div class='panel-collapse collapse' id='GetStarted'>
-            <div class='panel-body'>
-              <a href='/get-started/request-an-appointment'>Request an Appointment</a>
-              <a href='/get-started/find-a-doctor'>Find a Doctor</a>
-              <a href='/get-started/smile-assessment'>Take the Smile Assessment</a>
-              <a href='/get-started/contact-us'>Contact Us</a>
-              <a href='/get-started/questions-for-your-doctor'>Questions to Ask Your Doctor</a>
-            </div>
-          </div>
-        </div>
-        <div class='panel'>
-          <div class='panel-heading'>
-            <div class='panel-title'>
-              <a class='btn btn-info toggleTrack' data-parent='#accordion' data-toggle='collapse' href='#TheInvisalignDifference'
-                id='TheInvisalignDifferenceBtn'>
-                <span>The Invisalign Difference</span>
-                <span class='imagePlus'></span>
-                <div class='expand expand-plus'></div>
-              </a>
-            </div>
-          </div>
-          <div class='panel-collapse collapse' id='TheInvisalignDifference'>
-            <div class='panel-body'>
-              <a href='/the-invisalign-difference'>Overview</a>
-              <a href='/the-invisalign-difference/invisalign-aligners'>Invisalign Clear Aligners</a>
-              <a href='/the-invisalign-difference/itero-3d-scanner'>iTero<sup>&reg;</sup> Element Scanner</a>
-              <a href='/the-invisalign-difference/clincheck-software'>ClinCheck<sup>&reg;</sup> Software</a>
-              <a href='/the-invisalign-difference/smarttrack-aligner-material'>SmartTrack<sup>&reg;</sup> Material</a>
-              <a href='/the-invisalign-difference/smartforce-attachments'>SmartForce<sup>&reg;</sup> Attachments</a>
-              <a href='/the-invisalign-difference/vivera-retainers'>Vivera<sup>&reg;</sup> Retainers</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      </br>
-    </div>
-  </div>
-
-  <div class='body-wrapper'>
-    <div class='find-a-doctor-request-appointment-form'>
-      <div class='row'>
-        <div class='col-sm-4 col-doc-profile'>
-          <a class='desk default' onclick='_DoctorLocator.viewProfile();'>
-            <img width="20" height="20" class="lessThanImg" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/png/lessThan.png"
-              alt="Lessthan" />
-            Back to Profile
-          </a>
-          <img width="200" height="200" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/pic_lead_capture_results_VIP.png"
-            alt="Pic lead capture results vip" />
-          <h3 class='gold-color'>Blevins & Dall Arancio</h3>
-          <p class='p-speciality'>Orthodontist&nbsp;&nbsp;&nbsp;VIP: Diamond Provider<span class="info-icon2"></span></p>
-          <p>4.2 miles away</p>
-          <a class='mob default' onclick='_DoctorLocator.viewProfile();'>
-            <img width="20" height="20" class="lessThanImg" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/png/lessThan.png"
-              alt="Lessthan" />
-            Back to Profile
-          </a>
-        </div>
-        <div class='col-sm-8 w-bg col-dr-request-form'>
-          <h3>Request an appointment</h3>
-          <p class='p-doc-form'>We will help you schedule a consultation with <span id="reqDocName"></span>.</p>
-          <form id='iirfm'>
-            <div class='form-inline'>
-              <div class='form-group fpc'>
-                <label class='text'>I am:</label>
-                <label class='radio-inline inv-cus'>
-                  <input checked='checked' id='ageAdult' name='formAge' type='radio' value='A'>
-                  An adult
+<body>
+  <div id="__next">
+    <div class="styles__Root-rvsov0-0 iLKPBH">
+      <div class="styles__Div_Overlay-s13ihy51-0 iVdtSR" data-visible="false">
+        <div class="styles__SearchOverflow-s13ihy51-1 duYhFt SearchOverflow__Div_SearchOverflow-s118hocu-0 jfmxJx">
+          <div class="SearchOverflow__Div_SearchOverflowSearch-s118hocu-1 bWdGQw">
+            <form>
+              <div class="styles__Div_Search-mk6fa5-0 kNnAnV" role="search"><label class="styles__Label_SearchLabel-mk6fa5-2 gSVXQn"
+                  for="ebc48a60-b51f-11e8-bef0-2312153c69c9">
+                  <div class="styles__Div_VisuallyHidden-mk6fa5-1 kOcrdE">Search</div>
                 </label>
-                <label class='radio-inline inv-cus'>
-                  <input name='formAge' type='radio' value='P'>
-                  A parent
-                </label>
-                <label class='radio-inline inv-cus'>
-                  <input name='formAge' type='radio' value='T'>
-                  A teen
-                </label>
-              </div>
-            </div>
-            <div class='form-inline'>
-              <div class='form-group fn'>
-                <label for='txtFirstName'>First Name</label>
-                <input class='form-control' id='txtFirstName' type='text'>
-              </div>
-              <div class='form-group ln'>
-                <label for='txtLastName'>Last Name</label>
-                <input class='form-control' id='txtLastName' type='text'>
-              </div>
-            </div>
-            <div class='form-inline'>
-              <div class='form-group dob'>
-                <label for='txtDOB'>Date of Birth</label>
-                <input class='form-control' id='txtDOB' type='tel'>
-                <p>Age affects treatment options</p>
-              </div>
-              <div class='form-group fz'>
-                <label for='txtZipDC'>ZIP Code</label>
-                <input class='form-control' id='txtZipDC' type='tel'>
-              </div>
-              <div class='form-group fp'>
-                <label for='txtPhoneNumber'>Mobile Phone</label>
-                <input class='form-control' id='txtPhoneNumber' type='tel'>
-              </div>
-            </div>
-            <div class='form-inline'>
-              <div class='form-group em'>
-                <label for='txtEmail'>Email Address</label>
-                <input class='form-control' id='txtEmail' type='email'>
-              </div>
-            </div>
-            <div class='form-inline'>
-              <div class='form-group fpc'>
-                <label class='text'>Preferred Contact Time</label>
-                <label class='radio-inline inv-cus'>
-                  <input name='preftime' type='radio' value='Morning'>
-                  Morning
-                </label>
-                <label class='radio-inline inv-cus'>
-                  <input name='preftime' type='radio' value='Afternoon'>
-                  Afternoon
-                </label>
-                <label class='radio-inline inv-cus'>
-                  <input name='preftime' type='radio' value='Evening'>
-                  Evening
-                </label>
-                <label class='radio-inline inv-cus'>
-                  <input checked='checked' id='noPreference' name='preftime' type='radio' value='No preference'>
-                  No preference
-                </label>
-              </div>
-            </div>
-            <div class='form-inline'>
-              <div class='form-group notifications'>
-                <label class='container'>
-                  <input checked='checked' id='agree' type='checkbox'>
-                  <span class='checkmark checkk_box1'></span>
-                </label>
-                <label class='text_align3'>I agree to receive information about Invisalign<sup>&reg;</sup> treatment
-                  and from partners of Align Technology, Inc. by email, mobile phone, text, or other means to which I
-                  consent. This may contain special offers, information on local providers, and requests for feedback
-                  about your experience. Align will only contact you via phone to schedule a consultation with a local
-                  provider. Your personal data will be processed in accordance with our <a target="_blank" onclick="window.location='/privacy-statement'">Privacy
-                    Policy.</a></label>
-              </div>
-            </div>
-            <div class='get-start'>
-              <a id='btnRASubmit'>Request My Appointment</a>
-              <div aria-labelledby='myModalLabel' class='modal fade' id='modalAgeError' role='dialog' tabindex='-1'>
-                <div class='modal-dialog' role='document'>
-                  <div class='modal-content'>
-                    <span aria-label='Close' class='popup-close' data-dismiss='modal'></span>
-                    <p>We’re glad you’re interested in Invisalign treatment. Unfortunately, you must be at least 13
-                      years old in order to complete this form. You can still find out if Invisalign treatment is right
-                      for you by simply asking your parents to complete this form on your behalf.</p>
+                <div class="styles__Div_SearchInputWrapper-mk6fa5-3 ffhmZw">
+                  <div class="styles__Div_SearchIcon-mk6fa5-4 bziAUk"><input type="image" class="styles__Input_SearchButton-s13ihy51-12 gZETSA"
+                      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjQgMjQiIGZpbGw9IiM4MDU1ZmYiPjxwYXRoIGQ9Ik0wLjM1NCwxMS42MzdjLTAuMDQ1LDAuMTEtMC4wNywwLjIzLTAuMDcsMC4zNTJjMCwwLjEyMiwwLjAyNSwwLjI0MSwwLjA3LDAuMzUyYzAuMDQ3LDAuMTExLDAuMTE0LDAuMjEyLDAuMTk4LDAuMjk2ICBsNy4yNyw3LjI2N2MwLjM1NywwLjM1NywwLjkzNywwLjM1NywxLjI5NCwwczAuMzU3LTAuOTM2LDAtMS4yOTNsLTUuNzA5LTUuNzA3aDE5LjM5N2MwLjUwNSwwLDAuOTE0LTAuNDEsMC45MTQtMC45MTUgIHMtMC40MDktMC45MTUtMC45MTQtMC45MTVIMy40MDZMOS4xMTUsNS4zN2MwLjM1Ny0wLjM1NywwLjM1Ny0wLjkzOCwwLTEuMjk1QzguOTM3LDMuODk2LDguNzAyLDMuODA3LDguNDY5LDMuODA3ICBDOC4yMzQsMy44MDcsOCwzLjg5Niw3LjgyMSw0LjA3NGwtNy4yNzEsNy4yNjhjLTAuMDE3LDAuMDE3LTAuMDIyLDAuMDQtMC4wMzgsMC4wNThDMC40NSwxMS40NzEsMC4zOTIsMTEuNTQ3LDAuMzU0LDExLjYzN3oiPjwvcGF0aD48L3N2Zz4="
+                      alt="Close Search" /></div><input type="search" class="styles__Input_SearchInput-mk6fa5-5 ebmcyM"
+                    id="ebc48a60-b51f-11e8-bef0-2312153c69c9" autoComplete="off" placeholder="Search quotes, shows, movies, and more"
+                    value="" aria-owns="ebc48a60-b51f-11e8-bef0-2312153c69c9-results" aria-expanded="true"
+                    aria-autocomplete="both" aria-activedescendant="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-null"
+                    aria-describedby="ebc48a60-b51f-11e8-bef0-2312153c69c9-error" data-hasicon="true" />
+                  <div class="styles__Div_Results-mk6fa5-7 ffOLgj" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-results"
+                    role="listbox" tabindex="0">
+                    <ol class="styles__Ol_Options-mk6fa5-10 hfBtpF">
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/friends-k77NWuMMAq7k"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/friends-k77NWuMMAq7k">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/c5361bab-f964-4a51-8c47-a21673f47fb1.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Friends</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">2166 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/sex-and-the-city-cVJc9ylCgNW1"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/sex-and-the-city-cVJc9ylCgNW1">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/f6c95516-52d9-43a4-9803-cec0f57a0236.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Sex and the City</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">1337 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/30-rock-8S94DhgHQeMw"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/30-rock-8S94DhgHQeMw">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/225935d6-063f-4f7b-80fe-6f920e94c8d6.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">30 Rock</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">1020 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/the-real-housewives-of-new-york-city-ahF01mJfuD67"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/the-real-housewives-of-new-york-city-ahF01mJfuD67">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/69c013c7-db65-4c00-bc08-0ce9937eb172.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">The Real Housewives of New York City</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">993 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/keeping-up-with-the-kardashians-7rKzMerrSogI"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/keeping-up-with-the-kardashians-7rKzMerrSogI">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/1978513b-13ef-474e-b33e-def86b21283a.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Keeping Up with the Kardashians</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">853 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/parks-and-recreation-K5prWN40yOwT"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/parks-and-recreation-K5prWN40yOwT">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/28ee7150-6e0e-4683-9296-b166e9e469c3.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Parks and Recreation</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">844 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/mad-men-YqdcSwb29mii"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/mad-men-YqdcSwb29mii">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/dd0fa1b8-0e38-4893-b89c-86092eae329a.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Mad Men</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">653 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/person/sarah-jessica-parker-sdWtKNlvNqaI"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/person/sarah-jessica-parker-sdWtKNlvNqaI">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="s13ihy51-7-styles__Div_OptionFrame-dmmxrE ctrppy"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/person/picture/f72e74b2-7181-4ea8-bdb7-05c72643b468.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Person</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Sarah Jessica Parker</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">623 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/girls-zMQP38kTY9Zu"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/girls-zMQP38kTY9Zu">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/51e25b93-e2f3-4b03-8df0-5eec4b3e2065.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Girls</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">598 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/the-sopranos-gO7jLwndA6Mc"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/the-sopranos-gO7jLwndA6Mc">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/36678b56-85c3-4fd7-9287-67171a9b1695.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">The Sopranos</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">581 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/arrested-development-oUSFZv9sriHq"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/arrested-development-oUSFZv9sriHq">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/7d2798c6-9790-4d7b-8d18-4d57aef01627.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Arrested Development</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">565 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/vanderpump-rules-ANng168drpyw"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/vanderpump-rules-ANng168drpyw">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/ce0b6f4e-2385-4ca1-8118-b52fae9d227a.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Vanderpump Rules</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">497 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/gossip-girl-XLIDhtHZFpUE"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/gossip-girl-XLIDhtHZFpUE">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/853d3976-69a5-4ca7-8c74-1564e106ad0b.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Gossip Girl</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">471 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/person/matthew-perry-hFUpydJqvJWX"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/person/matthew-perry-hFUpydJqvJWX">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="s13ihy51-7-styles__Div_OptionFrame-dmmxrE ctrppy"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/person/picture/96048743-b660-4a91-b86b-d7ef0fdb6ce9.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Person</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Matthew Perry</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">463 Quotes</h2>
+                        </div>
+                      </li>
+                      <li class="styles__Li_Option-mk6fa5-11 kvQGvw" id="ebc48a60-b51f-11e8-bef0-2312153c69c9-option-https://quotes.dubsmash.com/show/veep-9dxLe9VIkUIv"
+                        role="option" aria-selected="false" tabindex="-1" data-value="https://quotes.dubsmash.com/show/veep-9dxLe9VIkUIv">
+                        <div class="styles__Div_Option-s13ihy51-6 ekDhzS">
+                          <div class="styles__Div_OptionFrame-s13ihy51-7 kIyIWW"><img class="image aspectRatioContent styles__Img_OptionFrameImg-s13ihy51-8 bXLqld"
+                              src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/0b26ba67-b693-4fa2-a10f-ff82eeae90cb.jpg" /></div>
+                          <div class="styles__Div_OptionType-s13ihy51-11 kLdYBn">Series</div>
+                          <h1 class="styles__H1_OptionTitle-s13ihy51-9 jaXiUs">Veep</h1>
+                          <h2 class="styles__H2_OptionSubtitle-s13ihy51-10 ebbMyq">455 Quotes</h2>
+                        </div>
+                      </li>
+                    </ol>
                   </div>
                 </div>
               </div>
-
-            </div>
-          </form>
-        </div>
-        <div class='col-sm-8 w-bg col-dr-request-form-thnak-you'>
-          <h2 class='gold-color thanksText'>Thanks for submitting your request.</h2>
-          <h3 class='text-center endText'>We will follow up soon to help you schedule a consultation with an Invisalign<sup>&reg;</sup>-trained
-            provider.</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class='container-fluid find-a-doctor-dr-profile-error'>
-      <div class='row row-hero-section'>
-        <div class='col-sm-12'>
-          <h1>
-            https://www.invisalign.com/get-started/find-a-doctor?QuerySource=TR2&amp;searchType=adult&amp;zip=94103
-          </h1>
-          <h1 class='gold-color'>Hmm...we can't find that page.</h1>
-          <h3>Return to the <a class="underLine" href="javascript:void(0);" , onclick="backAway();">previous page</a>
-            or go back to our <a class="underLine" href="/">homepage</a>.</h3>
-        </div>
-      </div>
-    </div>
-    <script src="//dv2c9ihs6hqjp.cloudfront.net/assets/align_mask-d8fdedf0e526b5732b9fe7baee836c35323dfc71d11a723fa3304ffcb583f4e6.js"
-      defer="defer"></script>
-    <script src="//dv2c9ihs6hqjp.cloudfront.net/assets/form_time_track-dfbca70b210e33b242a1c2d2c47d94503474aa087fdd74c943894b7feb449945.js"
-      defer="defer"></script>
-    <script src="//dv2c9ihs6hqjp.cloudfront.net/assets/doctor-recommender-207ab282e962fecdf30826b138672326fa9a75a7e483f98aa575470d5f8fc310.js"
-      defer="defer"></script>
-    <script src="//dv2c9ihs6hqjp.cloudfront.net/assets/DocLoc3/DocAptRequest-a462fb46ef9ae1ed56ca9980469c602d2678b4bd2ba9470966a1c26b0dd6e3ba.js"
-      defer="defer"></script>
-
-  </div>
-  <div class='footer footerAbsolute'>
-    <div class='footer-container container'>
-      <div class='row first'>
-        <div class='col-footer-1'>
-          <a class="footer-link-header" href="/Treatable-Cases">Treatable Cases</a>
-          <ul class='footer-ul'>
-            <li>
-              <a href="/Treatable-Cases/crowded-teeth">Crowded Teeth</a>
-            </li>
-            <li>
-              <a href="/Treatable-Cases/overbite">Overbite</a>
-            </li>
-            <li>
-              <a href="/Treatable-Cases/underbite">Underbite</a>
-            </li>
-            <li>
-              <a href="/Treatable-Cases/crossbite">Crossbite</a>
-            </li>
-            <li>
-              <a href="/Treatable-Cases/gap-teeth">Gap Teeth</a>
-            </li>
-            <li>
-              <a href="/Treatable-Cases/open-bite">Open Bite</a>
-            </li>
-            <li class='two-line'>
-              <a href="/Treatable-Cases/generally-straighter-teeth">Generally Straighter Teeth</a>
-            </li>
-          </ul>
-        </div>
-        <div class='col-footer-2'>
-          <a class="footer-link-header" href="/how-invisalign-works">How Invisalign Works</a>
-          <ul class='footer-ul'>
-            <li class='two-line'>
-              <a href="/how-invisalign-works/treatment-plan">How Your Treatment Plan Is Made</a>
-            </li>
-            <li class='two-line'>
-              <a href="/how-invisalign-works/how-custom-aligners-are-made">How Your Aligners Are Made</a>
-            </li>
-            <li>
-              <a href="/how-invisalign-works/starting-treatment">Getting Your First Aligners</a>
-            </li>
-            <li class='two-line'>
-              <a href="/how-invisalign-works/living-with-invisalign">Living With Invisalign Clear Aligners</a>
-            </li>
-            <li>
-              <a href="/how-invisalign-works/success-stories">Success Stories</a>
-            </li>
-            <li class='two-line'>
-              <a href="/how-invisalign-works/comparison-chart">Compare Treatment Options</a>
-            </li>
-          </ul>
-        </div>
-        <div class='col-footer-3'>
-          <a class="footer-link-header" href="/invisalign-cost">Cost</a>
-          <ul class='footer-ul'>
-            <li class='two-line'>
-              <a href="/invisalign-cost/how-to-pay-for-invisalign">Ways to Pay for Invisalign Treatment</a>
-            </li>
-          </ul>
-          <br>
-          <a class="footer-link-header hide-mobile" href="/braces-for-teens-and-adults/teen">Invisalign for Teens and
-            Adults</a>
-          <ul class='footer-ul'>
-            <li class='two-line'>
-              <a href="/braces-for-teens-and-adults/teen">Teen</a>
-            </li>
-            <li class='two-line'>
-              <a href="/braces-for-teens-and-adults/parent">Parent</a>
-            </li>
-            <li class='two-line'>
-              <a href="/braces-for-teens-and-adults/adult">Adult</a>
-            </li>
-          </ul>
-        </div>
-        <div class='col-footer-4'>
-          <a class="footer-link-header" href="/get-started/smile-assessment">Get Started</a>
-          <ul class='footer-ul'>
-            <li class='mob-1'>
-              <a href="/get-started/request-an-appointment">Request an Appointment</a>
-            </li>
-            <li class='mob-2'>
-              <a href="/get-started/find-a-doctor">Find a Doctor</a>
-            </li>
-            <li class='mob-3'>
-              <a href="/get-started/smile-assessment">Take the Smile Assessment</a>
-            </li>
-            <li class='mob-4'>
-              <a href="/get-started/contact-us">Contact Us</a>
-            </li>
-            <li class='mob-5 two-line'>
-              <a href="/get-started/questions-for-your-doctor">Questions to Ask Your Doctor</a>
-            </li>
-          </ul>
-        </div>
-        <div class='col-footer-5'>
-          <a class="footer-link-header" href="/the-invisalign-difference">The Invisalign Difference</a>
-          <ul class='footer-ul'>
-            <li>
-              <a href="/the-invisalign-difference/invisalign-aligners">Invisalign Clear Aligners</a>
-            <li>
-              <a href="/the-invisalign-difference/itero-3d-scanner">iTero Element<sup>&reg;</sup> Scanner</a>
-            </li>
-            <li>
-              <a href="/the-invisalign-difference/clincheck-software">ClinCheck<sup>&reg;</sup> Software</a>
-            </li>
-            <li>
-              <a href="/the-invisalign-difference/smarttrack-aligner-material">SmartTrack<sup>&reg;</sup> Material</a>
-            </li>
-            <li class='two-line'>
-              <a href="/the-invisalign-difference/smartforce-attachments">SmartForce<sup>&reg;</sup> Attachments</a>
-            </li>
-            <li>
-              <a href="/the-invisalign-difference/vivera-retainers">Vivera<sup>&reg;</sup> Retainers</a>
-            </li>
-            </li>
-          </ul>
-        </div>
-        <div class='col-footer-4 deskhide'>
-          <a class="footer-link-header" href="/braces-for-teens-and-adults/teen">Invisalign for Teens and Adults</a>
-          <ul class='footer-ul'>
-            <li class='two-line'>
-              <a href="/braces-for-teens-and-adults/teen">Teen</a>
-            </li>
-            <li class='two-line'>
-              <a href="/braces-for-teens-and-adults/parent">Parent</a>
-            </li>
-            <li class='two-line'>
-              <a href="/braces-for-teens-and-adults/adult">Adult</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class='row second'>
-        <div class='col-sm-8'>
-          <div class='link-section'>
-            <a class="sah1" href="/about-align-technology">About</a>
-            <a class="sah1" href="/frequently-asked-questions">FAQ</a>
-            <a class="sah1" href="http://jobs.jobvite.com/align-tech/">Careers</a>
-            <a class="sah1" href="https://www.invisalignaccessories.com/">Invisalign Accessories</a>
-            <a target="_blank" class="sah1" href="https://my.invisalign.com">User Login</a>
-            <a class="sah1" href="https://vip.invisalign.com/v3/login.action">Doctor Login</a>
-            <a class="footer_terms_of_use" href="/terms-of-use">Terms of Use</a>
-            <a class="sah1" href="/sitemap">Sitemap</a>
-            <a class="sah1" href="/operation-smile-terms-and-conditions">Operation Smile Terms and Conditions</a>
-            <a class="hidden tandc" href="/operation-smile-terms-and-conditions">Terms and Conditions</a>
-            <a class="footer_privacy" href="/privacy-policy">Privacy</a>
-            <a class="inlineBlockCss footer_cookies_and_ads" href="/cookies-and-ads">Cookies &amp; Ads</a>
+            </form>
+          </div>
+          <div class="styles__Div_HeaderContent-s13ihy51-2 fnuJVf"><a href="/"><img class="styles__Img_Logo-s13ihy51-3 dovYRY"
+                src="/_next/static/images/black-4c90292211c12d6096285ab24a1b3c5a.png" /></a>
+            <form class="styles__Search-s13ihy51-4 hzfqHI">
+              <div class="styles__Div_Search-mk6fa5-0 kNnAnV" role="search"><label class="styles__Label_SearchLabel-mk6fa5-2 gSVXQn"
+                  for="ebce0040-b51f-11e8-bef0-2312153c69c9">
+                  <div class="styles__Div_VisuallyHidden-mk6fa5-1 kOcrdE">Search</div>
+                </label>
+                <div class="styles__Div_SearchInputWrapper-mk6fa5-3 ffhmZw">
+                  <div class="styles__Div_SearchIcon-mk6fa5-4 bziAUk"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjMwIDMwIDQwIDQwIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEuNDE0MjEiPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTQ3Ny45NzMsLTQzMCkiPjxwYXRoIGQ9Ik01MzUuMDU4LDQ4OS4xOEM1MzIuMTk3LDQ5MS41NjUgNTI4LjUxNiw0OTMgNTI0LjUsNDkzQzUxNS4zODgsNDkzIDUwOCw0ODUuNjEyIDUwOCw0NzYuNUM1MDgsNDY3LjM4OCA1MTUuMzg4LDQ2MCA1MjQuNSw0NjBDNTMzLjYxMiw0NjAgNTQxLDQ2Ny4zODggNTQxLDQ3Ni41QzU0MSw0ODAuNTE2IDUzOS41NjUsNDg0LjE5NyA1MzcuMTgsNDg3LjA1OEw1NDcuNTYzLDQ5Ny40NDFDNTQ4LjE0Niw0OTguMDI0IDU0OC4xNDYsNDk4Ljk3IDU0Ny41NjMsNDk5LjU1M0M1NDcuNTU5LDQ5OS41NTYgNTQ3LjU1Niw0OTkuNTU5IDU0Ny41NTMsNDk5LjU2M0M1NDYuOTcsNTAwLjE0NiA1NDYuMDI0LDUwMC4xNDYgNTQ1LjQ0MSw0OTkuNTYzTDUzNS4wNTgsNDg5LjE4Wk01MzgsNDc2LjVDNTM4LDQ4My45NTYgNTMxLjk1Niw0OTAgNTI0LjUsNDkwQzUxNy4wNDQsNDkwIDUxMSw0ODMuOTU2IDUxMSw0NzYuNUM1MTEsNDY5LjA0NCA1MTcuMDQ0LDQ2MyA1MjQuNSw0NjNDNTMxLjk1Niw0NjMgNTM4LDQ2OS4wNDQgNTM4LDQ3Ni41WiIgZmlsbD0iIzRkNGQ0ZCI+PC9wYXRoPjwvZz48L3N2Zz4K"
+                      alt="" /></div><input type="search" class="styles__Input_SearchInput-mk6fa5-5 ebmcyM" id="ebce0040-b51f-11e8-bef0-2312153c69c9"
+                    autoComplete="off" placeholder="Search quotes, shows, movies, and more" value="" aria-owns="ebce0040-b51f-11e8-bef0-2312153c69c9-results"
+                    aria-expanded="false" aria-autocomplete="both" aria-activedescendant="ebce0040-b51f-11e8-bef0-2312153c69c9-option-null"
+                    aria-describedby="ebce0040-b51f-11e8-bef0-2312153c69c9-error" data-hasicon="true" />
+                </div>
+              </div>
+            </form><input type="image" class="styles__Input_SearchButton-s13ihy51-12 gZETSA" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjMwIDMwIDQwIDQwIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjEuNDE0MjEiPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsLTQ3Ny45NzMsLTQzMCkiPjxwYXRoIGQ9Ik01MzUuMDU4LDQ4OS4xOEM1MzIuMTk3LDQ5MS41NjUgNTI4LjUxNiw0OTMgNTI0LjUsNDkzQzUxNS4zODgsNDkzIDUwOCw0ODUuNjEyIDUwOCw0NzYuNUM1MDgsNDY3LjM4OCA1MTUuMzg4LDQ2MCA1MjQuNSw0NjBDNTMzLjYxMiw0NjAgNTQxLDQ2Ny4zODggNTQxLDQ3Ni41QzU0MSw0ODAuNTE2IDUzOS41NjUsNDg0LjE5NyA1MzcuMTgsNDg3LjA1OEw1NDcuNTYzLDQ5Ny40NDFDNTQ4LjE0Niw0OTguMDI0IDU0OC4xNDYsNDk4Ljk3IDU0Ny41NjMsNDk5LjU1M0M1NDcuNTU5LDQ5OS41NTYgNTQ3LjU1Niw0OTkuNTU5IDU0Ny41NTMsNDk5LjU2M0M1NDYuOTcsNTAwLjE0NiA1NDYuMDI0LDUwMC4xNDYgNTQ1LjQ0MSw0OTkuNTYzTDUzNS4wNTgsNDg5LjE4Wk01MzgsNDc2LjVDNTM4LDQ4My45NTYgNTMxLjk1Niw0OTAgNTI0LjUsNDkwQzUxNy4wNDQsNDkwIDUxMSw0ODMuOTU2IDUxMSw0NzYuNUM1MTEsNDY5LjA0NCA1MTcuMDQ0LDQ2MyA1MjQuNSw0NjNDNTMxLjk1Niw0NjMgNTM4LDQ2OS4wNDQgNTM4LDQ3Ni41WiIgZmlsbD0iIzRkNGQ0ZCI+PC9wYXRoPjwvZz48L3N2Zz4K"
+              alt="Open Search" />
           </div>
         </div>
-        <div class='col-sm-4 link-section-2'>
-          <div class='row pull-right'>
-            <div class='col-sm-6 country'>
-              <a href="/choose-your-country"><img class="country-logo" width="30px" src="https://s3.amazonaws.com/storagy-invisalign/images_2_0/assets/invisalign/united-states.png"
-                  alt="United states" /></a>
-              <a class="footer-link-header" href="/choose-your-country">United States</a>
+      </div>
+      <div class="styles__ContentWrapper-rvsov0-1 hkwedF">
+        <div class="styles__Div_Explore-vj5jpw-0 juHDBt">
+          <div class="styles__Div_FeedSection-s2s72tg-0 cRserb">
+            <div class="styles__Div_HeadingContainer-s2s72tg-1 gLcgdH">
+              <h5 class="styles__H5_Heading5-s11g8p9p-4 kVsnpk">Trending</h5>
             </div>
-            <div class='col-sm-6 social-logos'>
-              <div class='footer-social-links news-inv-social-links'>
-                <a class='inv-social-icons inv-facebook' href='https://www.facebook.com/invisalign' target='_blank'></a>
-                <a class='inv-social-icons inv-instagram' href='https://www.instagram.com/invisalign/' target='_blank'></a>
-                <a class='inv-social-icons inv-twitter' href='https://twitter.com/invisalign' target='_blank'></a>
-                <a class='inv-social-icons inv-pinterest' href='https://www.pinterest.com/invisalign/' target='_blank'></a>
-                <a class='inv-social-icons inv-youtube' href='https://www.youtube.com/invisalign' target='_blank'></a>
+            <div class="styles__Div_FeedSectionItemsContainer-s2s72tg-2 jdgCvv">
+              <div class="styles__Div_CorePlayerContainer-kqgb9e-2 fyXXMy">
+                <div class="styles__Div_CorePlayer-s15uts9k-0 bcSyAR">
+                  <div class="styles__Div_CoreVideoWrapper-s1gflf96-0 cwLiRG">
+                    <div data-vjs-player="true"><video preload="auto" playsinline="" class="dubsmash-video"></video></div>
+                  </div>
+                  <div class="styles__Div_PreRollContainer-s15uts9k-5 gUlEzS">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 dTAGoC">
+                      <div class="styles__Div_ThumbnailWrapper-wpaxtq-0 cnqbds"><img class="aspectRatioContent" src="https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/f436692c-6ce2-4279-a744-049c076a8152.jpeg" /></div>
+                      <div class="styles__Div_LoadingSpinner-wpaxtq-3 iaPgYB">
+                        <div class="styles__Div_SpinnerStyle-s1m0r17o-0 cMzHwG" color="#fff"></div>
+                      </div><button class="styles__Button_Play-wpaxtq-2 hLsUUl"><img class="styles__Img_PlayIcon-wpaxtq-1 gtDScl styles__Img_PostRoll-s2yod4k-3 jGpSjy"
+                          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4yICg1MTE2MCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+ODE4QzQ4NUQtNDAyRC00NUZBLTlGQzAtODc0Mzc4NTM2M0IyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbi0vLVBsYXllci0vLVBsYXkiPgogICAgICAgICAgICA8ZyBpZD0iU2hhcGUiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjE2IDEwIDE2IDM4IDM4IDI0Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBwb2ludHM9IjAgMCA0OCAwIDQ4IDQ4IDAgNDgiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Play</label></button>
+                    </div>
+                  </div>
+                  <div class="styles__Div_PostRollContainer-s15uts9k-4 gNbJfr">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 oCdRH"><button class="styles__Button_PostRoll-s2yod4k-1 llDfSU"><img
+                          class="styles__Img_PostRoll-s2yod4k-3 jGpSjy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGg0OHY0OEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTI0IDE0VjdsLTguNzUgOC43NUwyNCAyNC41di03YzUuNzkzIDAgMTAuNSA0LjcwNyAxMC41IDEwLjUgMCA1Ljc5Mi00LjcwNyAxMC41LTEwLjUgMTAuNVMxMy41IDMzLjc5MiAxMy41IDI4SDEwYzAgNy43MzUgNi4yNjUgMTQgMTQgMTRzMTQtNi4yNjUgMTQtMTQtNi4yNjUtMTQtMTQtMTR6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Replay</label></button></div>
+                  </div>
+                  <div class="styles__Div_MuteContainer-s15uts9k-3 iUJnyd"><button class="styles__Button_MuteButton-x9lrpr-0 OPpzL"><img
+                        class="styles__Img_VolumeOn-x9lrpr-1 kUumMr" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDM2IDM0Ij4KICAgIDxkZWZzPgogICAgICAgIDxmaWx0ZXIgaWQ9ImEiIHdpZHRoPSIxODMuMyUiIGhlaWdodD0iMTgzLjMlIiB4PSItNDEuNyUiIHk9Ii00MS43JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij4KICAgICAgICAgICAgPGZlTW9ycGhvbG9neSBpbj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJkaWxhdGUiIHJhZGl1cz0iMSIgcmVzdWx0PSJzaGFkb3dTcHJlYWRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dTcHJlYWRPdXRlcjEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZU1vcnBob2xvZ3kgaW49IlNvdXJjZUFscGhhIiByYWRpdXM9IjEiIHJlc3VsdD0ic2hhZG93SW5uZXIiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dJbm5lciIgcmVzdWx0PSJzaGFkb3dJbm5lciIvPgogICAgICAgICAgICA8ZmVDb21wb3NpdGUgaW49InNoYWRvd09mZnNldE91dGVyMSIgaW4yPSJzaGFkb3dJbm5lciIgb3BlcmF0b3I9Im91dCIgcmVzdWx0PSJzaGFkb3dPZmZzZXRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlR2F1c3NpYW5CbHVyIGluPSJzaGFkb3dPZmZzZXRPdXRlcjEiIHJlc3VsdD0ic2hhZG93Qmx1ck91dGVyMSIgc3RkRGV2aWF0aW9uPSIzIi8+CiAgICAgICAgICAgIDxmZUNvbG9yTWF0cml4IGluPSJzaGFkb3dCbHVyT3V0ZXIxIiByZXN1bHQ9InNoYWRvd01hdHJpeE91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgICAgICA8ZmVNZXJnZT4KICAgICAgICAgICAgICAgIDxmZU1lcmdlTm9kZSBpbj0ic2hhZG93TWF0cml4T3V0ZXIxIi8+CiAgICAgICAgICAgICAgICA8ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz4KICAgICAgICAgICAgPC9mZU1lcmdlPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8ZyBmaWx0ZXI9InVybCgjYSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuOCA1KSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE2LjUgMTJBNC41IDQuNSAwIDAgMCAxNCA3Ljk3djIuMjFsMi40NSAyLjQ1Yy4wMy0uMi4wNS0uNDEuMDUtLjYzem0yLjUgMGMwIC45NC0uMiAxLjgyLS41NCAyLjY0bDEuNTEgMS41MUE4Ljc5NiA4Ljc5NiAwIDAgMCAyMSAxMmMwLTQuMjgtMi45OS03Ljg2LTctOC43N3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXpNNC4yNyAzTDMgNC4yNyA3LjczIDlIM3Y2aDRsNSA1di02LjczbDQuMjUgNC4yNWMtLjY3LjUyLTEuNDIuOTMtMi4yNSAxLjE4djIuMDZhOC45OSA4Ljk5IDAgMCAwIDMuNjktMS44MUwxOS43MyAyMSAyMSAxOS43M2wtOS05TDQuMjcgM3pNMTIgNEw5LjkxIDYuMDkgMTIgOC4xOFY0eiIvPgogICAgICAgICAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" /><img
+                        class="styles__Img_VolumeOff-x9lrpr-2 ccNuic" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzYiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNiAzNCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYiIgZD0iTTMgOXY2aDRsNSA1VjRMNyA5SDN6bTEzLjUgM0E0LjUgNC41IDAgMCAwIDE0IDcuOTd2OC4wNWMxLjQ4LS43MyAyLjUtMi4yNSAyLjUtNC4wMnpNMTQgMy4yM3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXMtMi4xMSA1Ljg1LTUgNi43MXYyLjA2YzQuMDEtLjkxIDctNC40OSA3LTguNzcgMC00LjI4LTIuOTktNy44Ni03LTguNzd6Ii8+CiAgICAgICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAyLjYlIiB4PSItNTAlIiB5PSItNTEuMyUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgICAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICAgICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8cGF0aCBkPSJNNS44IDVoMjR2MjRoLTI0eiIvPgogICAgICAgIDxnIGZpbGwtcnVsZT0ibm9uemVybyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS44IDUpIj4KICAgICAgICAgICAgPHVzZSBmaWxsPSIjMDAwIiBmaWx0ZXI9InVybCgjYSkiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICAgICAgICAgIDx1c2UgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpocmVmPSIjYiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" /></button></div>
+                  <div class="styles__Div_TopGradient-s15uts9k-2 jmKwjB"></div>
+                  <h3 class="styles__H3_Heading-s668djs-0 evkoxy"><a href="/movie/childs-play-3-suv13SsGps47">Child&#x27;s
+                      Play 3</a></h3>
+                  <div class="styles__Div_OptionsMenu-s15uts9k-1 cKQUQv">
+                    <ul class="styles__Ul_OptionsMenu-k255l0-0 cEpUvN">
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNiAyOCI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTEyIDhjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem0wIDJjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yem0wIDZjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjU1MCUiIGhlaWdodD0iMjEyLjUlIiB4PSItMjI1JSIgeT0iLTU2LjIlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPgogICAgICA8ZmVPZmZzZXQgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9InNoYWRvd09mZnNldE91dGVyMSIvPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgaW49InNoYWRvd09mZnNldE91dGVyMSIgcmVzdWx0PSJzaGFkb3dCbHVyT3V0ZXIxIiBzdGREZXZpYXRpb249IjMiLz4KICAgICAgPGZlQ29sb3JNYXRyaXggaW49InNoYWRvd0JsdXJPdXRlcjEiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC41IDAiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBhdGggZD0iTS00IDJoMjR2MjRILTR6Ii8+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNCAyKSI+CiAgICAgIDx1c2UgZmlsbD0iIzAwMCIgZmlsdGVyPSJ1cmwoI2EpIiB4bGluazpocmVmPSIjYiIvPgogICAgICA8dXNlIGZpbGw9IiNGRkYiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMCAzMiI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTE4IDE2LjA4Yy0uNzYgMC0xLjQ0LjMtMS45Ni43N0w4LjkxIDEyLjdjLjA1LS4yMy4wOS0uNDYuMDktLjcgMC0uMjQtLjA0LS40Ny0uMDktLjdsNy4wNS00LjExYy41NC41IDEuMjUuODEgMi4wNC44MSAxLjY2IDAgMy0xLjM0IDMtM3MtMS4zNC0zLTMtMy0zIDEuMzQtMyAzYzAgLjI0LjA0LjQ3LjA5LjdMOC4wNCA5LjgxQzcuNSA5LjMxIDYuNzkgOSA2IDljLTEuNjYgMC0zIDEuMzQtMyAzczEuMzQgMyAzIDNjLjc5IDAgMS41LS4zMSAyLjA0LS44MWw3LjEyIDQuMTZjLS4wNS4yMS0uMDguNDMtLjA4LjY1IDAgMS42MSAxLjMxIDIuOTIgMi45MiAyLjkyIDEuNjEgMCAyLjkyLTEuMzEgMi45Mi0yLjkyIDAtMS42MS0xLjMxLTIuOTItMi45Mi0yLjkyeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMTkwLjQlIiB4PSItNTAlIiB5PSItNDUuMiUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8cGF0aCBkPSJNMyA0aDI0djI0SDN6Ii8+CiAgICA8ZyBmaWxsLXJ1bGU9Im5vbnplcm8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgNCkiPgogICAgICA8dXNlIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNhKSIgeGxpbms6aHJlZj0iI2IiLz4KICAgICAgPHVzZSBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                    </ul>
+                  </div>
+                  <div class="styles__Div_TranscriptContainer-s15uts9k-6 hNFJoD">
+                    <div class="styles__Div_TranscriptWrapperOuter-s37px9k-0 aWddJ">
+                      <div class="styles__Div_TranscriptWrapperInner-s37px9k-1 jOLCbO">
+                        <p class="styles__P_Transcript-s37px9k-2 kUMVSP">I got some fresh meat lined up and I&#x27;m
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="styles__Div_CorePlayerContainer-kqgb9e-2 fyXXMy">
+                <div class="styles__Div_CorePlayer-s15uts9k-0 bcSyAR">
+                  <div class="styles__Div_CoreVideoWrapper-s1gflf96-0 cwLiRG">
+                    <div data-vjs-player="true"><video preload="auto" playsinline="" class="dubsmash-video"></video></div>
+                  </div>
+                  <div class="styles__Div_PreRollContainer-s15uts9k-5 gUlEzS">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 dTAGoC">
+                      <div class="styles__Div_ThumbnailWrapper-wpaxtq-0 cnqbds"><img class="aspectRatioContent" src="https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/0c4e53b3-c8ca-4007-b55d-32d0c9335b40.jpeg" /></div>
+                      <div class="styles__Div_LoadingSpinner-wpaxtq-3 iaPgYB">
+                        <div class="styles__Div_SpinnerStyle-s1m0r17o-0 cMzHwG" color="#fff"></div>
+                      </div><button class="styles__Button_Play-wpaxtq-2 hLsUUl"><img class="styles__Img_PlayIcon-wpaxtq-1 gtDScl styles__Img_PostRoll-s2yod4k-3 jGpSjy"
+                          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4yICg1MTE2MCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+ODE4QzQ4NUQtNDAyRC00NUZBLTlGQzAtODc0Mzc4NTM2M0IyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbi0vLVBsYXllci0vLVBsYXkiPgogICAgICAgICAgICA8ZyBpZD0iU2hhcGUiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjE2IDEwIDE2IDM4IDM4IDI0Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBwb2ludHM9IjAgMCA0OCAwIDQ4IDQ4IDAgNDgiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Play</label></button>
+                    </div>
+                  </div>
+                  <div class="styles__Div_PostRollContainer-s15uts9k-4 gNbJfr">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 oCdRH"><button class="styles__Button_PostRoll-s2yod4k-1 llDfSU"><img
+                          class="styles__Img_PostRoll-s2yod4k-3 jGpSjy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGg0OHY0OEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTI0IDE0VjdsLTguNzUgOC43NUwyNCAyNC41di03YzUuNzkzIDAgMTAuNSA0LjcwNyAxMC41IDEwLjUgMCA1Ljc5Mi00LjcwNyAxMC41LTEwLjUgMTAuNVMxMy41IDMzLjc5MiAxMy41IDI4SDEwYzAgNy43MzUgNi4yNjUgMTQgMTQgMTRzMTQtNi4yNjUgMTQtMTQtNi4yNjUtMTQtMTQtMTR6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Replay</label></button></div>
+                  </div>
+                  <div class="styles__Div_MuteContainer-s15uts9k-3 iUJnyd"><button class="styles__Button_MuteButton-x9lrpr-0 OPpzL"><img
+                        class="styles__Img_VolumeOn-x9lrpr-1 kUumMr" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDM2IDM0Ij4KICAgIDxkZWZzPgogICAgICAgIDxmaWx0ZXIgaWQ9ImEiIHdpZHRoPSIxODMuMyUiIGhlaWdodD0iMTgzLjMlIiB4PSItNDEuNyUiIHk9Ii00MS43JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij4KICAgICAgICAgICAgPGZlTW9ycGhvbG9neSBpbj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJkaWxhdGUiIHJhZGl1cz0iMSIgcmVzdWx0PSJzaGFkb3dTcHJlYWRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dTcHJlYWRPdXRlcjEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZU1vcnBob2xvZ3kgaW49IlNvdXJjZUFscGhhIiByYWRpdXM9IjEiIHJlc3VsdD0ic2hhZG93SW5uZXIiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dJbm5lciIgcmVzdWx0PSJzaGFkb3dJbm5lciIvPgogICAgICAgICAgICA8ZmVDb21wb3NpdGUgaW49InNoYWRvd09mZnNldE91dGVyMSIgaW4yPSJzaGFkb3dJbm5lciIgb3BlcmF0b3I9Im91dCIgcmVzdWx0PSJzaGFkb3dPZmZzZXRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlR2F1c3NpYW5CbHVyIGluPSJzaGFkb3dPZmZzZXRPdXRlcjEiIHJlc3VsdD0ic2hhZG93Qmx1ck91dGVyMSIgc3RkRGV2aWF0aW9uPSIzIi8+CiAgICAgICAgICAgIDxmZUNvbG9yTWF0cml4IGluPSJzaGFkb3dCbHVyT3V0ZXIxIiByZXN1bHQ9InNoYWRvd01hdHJpeE91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgICAgICA8ZmVNZXJnZT4KICAgICAgICAgICAgICAgIDxmZU1lcmdlTm9kZSBpbj0ic2hhZG93TWF0cml4T3V0ZXIxIi8+CiAgICAgICAgICAgICAgICA8ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz4KICAgICAgICAgICAgPC9mZU1lcmdlPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8ZyBmaWx0ZXI9InVybCgjYSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuOCA1KSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE2LjUgMTJBNC41IDQuNSAwIDAgMCAxNCA3Ljk3djIuMjFsMi40NSAyLjQ1Yy4wMy0uMi4wNS0uNDEuMDUtLjYzem0yLjUgMGMwIC45NC0uMiAxLjgyLS41NCAyLjY0bDEuNTEgMS41MUE4Ljc5NiA4Ljc5NiAwIDAgMCAyMSAxMmMwLTQuMjgtMi45OS03Ljg2LTctOC43N3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXpNNC4yNyAzTDMgNC4yNyA3LjczIDlIM3Y2aDRsNSA1di02LjczbDQuMjUgNC4yNWMtLjY3LjUyLTEuNDIuOTMtMi4yNSAxLjE4djIuMDZhOC45OSA4Ljk5IDAgMCAwIDMuNjktMS44MUwxOS43MyAyMSAyMSAxOS43M2wtOS05TDQuMjcgM3pNMTIgNEw5LjkxIDYuMDkgMTIgOC4xOFY0eiIvPgogICAgICAgICAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" /><img
+                        class="styles__Img_VolumeOff-x9lrpr-2 ccNuic" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzYiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNiAzNCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYiIgZD0iTTMgOXY2aDRsNSA1VjRMNyA5SDN6bTEzLjUgM0E0LjUgNC41IDAgMCAwIDE0IDcuOTd2OC4wNWMxLjQ4LS43MyAyLjUtMi4yNSAyLjUtNC4wMnpNMTQgMy4yM3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXMtMi4xMSA1Ljg1LTUgNi43MXYyLjA2YzQuMDEtLjkxIDctNC40OSA3LTguNzcgMC00LjI4LTIuOTktNy44Ni03LTguNzd6Ii8+CiAgICAgICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAyLjYlIiB4PSItNTAlIiB5PSItNTEuMyUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgICAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICAgICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8cGF0aCBkPSJNNS44IDVoMjR2MjRoLTI0eiIvPgogICAgICAgIDxnIGZpbGwtcnVsZT0ibm9uemVybyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS44IDUpIj4KICAgICAgICAgICAgPHVzZSBmaWxsPSIjMDAwIiBmaWx0ZXI9InVybCgjYSkiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICAgICAgICAgIDx1c2UgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpocmVmPSIjYiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" /></button></div>
+                  <div class="styles__Div_TopGradient-s15uts9k-2 jmKwjB"></div>
+                  <h3 class="styles__H3_Heading-s668djs-0 evkoxy"><a href="/show/e-news-kZ4zMiJ8EQxM">E! News</a></h3>
+                  <div class="styles__Div_OptionsMenu-s15uts9k-1 cKQUQv">
+                    <ul class="styles__Ul_OptionsMenu-k255l0-0 cEpUvN">
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNiAyOCI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTEyIDhjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem0wIDJjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yem0wIDZjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjU1MCUiIGhlaWdodD0iMjEyLjUlIiB4PSItMjI1JSIgeT0iLTU2LjIlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPgogICAgICA8ZmVPZmZzZXQgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9InNoYWRvd09mZnNldE91dGVyMSIvPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgaW49InNoYWRvd09mZnNldE91dGVyMSIgcmVzdWx0PSJzaGFkb3dCbHVyT3V0ZXIxIiBzdGREZXZpYXRpb249IjMiLz4KICAgICAgPGZlQ29sb3JNYXRyaXggaW49InNoYWRvd0JsdXJPdXRlcjEiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC41IDAiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBhdGggZD0iTS00IDJoMjR2MjRILTR6Ii8+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNCAyKSI+CiAgICAgIDx1c2UgZmlsbD0iIzAwMCIgZmlsdGVyPSJ1cmwoI2EpIiB4bGluazpocmVmPSIjYiIvPgogICAgICA8dXNlIGZpbGw9IiNGRkYiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMCAzMiI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTE4IDE2LjA4Yy0uNzYgMC0xLjQ0LjMtMS45Ni43N0w4LjkxIDEyLjdjLjA1LS4yMy4wOS0uNDYuMDktLjcgMC0uMjQtLjA0LS40Ny0uMDktLjdsNy4wNS00LjExYy41NC41IDEuMjUuODEgMi4wNC44MSAxLjY2IDAgMy0xLjM0IDMtM3MtMS4zNC0zLTMtMy0zIDEuMzQtMyAzYzAgLjI0LjA0LjQ3LjA5LjdMOC4wNCA5LjgxQzcuNSA5LjMxIDYuNzkgOSA2IDljLTEuNjYgMC0zIDEuMzQtMyAzczEuMzQgMyAzIDNjLjc5IDAgMS41LS4zMSAyLjA0LS44MWw3LjEyIDQuMTZjLS4wNS4yMS0uMDguNDMtLjA4LjY1IDAgMS42MSAxLjMxIDIuOTIgMi45MiAyLjkyIDEuNjEgMCAyLjkyLTEuMzEgMi45Mi0yLjkyIDAtMS42MS0xLjMxLTIuOTItMi45Mi0yLjkyeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMTkwLjQlIiB4PSItNTAlIiB5PSItNDUuMiUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8cGF0aCBkPSJNMyA0aDI0djI0SDN6Ii8+CiAgICA8ZyBmaWxsLXJ1bGU9Im5vbnplcm8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgNCkiPgogICAgICA8dXNlIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNhKSIgeGxpbms6aHJlZj0iI2IiLz4KICAgICAgPHVzZSBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                    </ul>
+                  </div>
+                  <div class="styles__Div_TranscriptContainer-s15uts9k-6 hNFJoD">
+                    <div class="styles__Div_TranscriptWrapperOuter-s37px9k-0 aWddJ">
+                      <div class="styles__Div_TranscriptWrapperInner-s37px9k-1 jOLCbO">
+                        <p class="styles__P_Transcript-s37px9k-2 kUMVSP">I&#x27;m showing my after-pregnancy body like,
+                          what&#x27;s good?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="styles__Div_CorePlayerContainer-kqgb9e-2 fyXXMy">
+                <div class="styles__Div_CorePlayer-s15uts9k-0 bcSyAR">
+                  <div class="styles__Div_CoreVideoWrapper-s1gflf96-0 cwLiRG">
+                    <div data-vjs-player="true"><video preload="auto" playsinline="" class="dubsmash-video"></video></div>
+                  </div>
+                  <div class="styles__Div_PreRollContainer-s15uts9k-5 gUlEzS">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 dTAGoC">
+                      <div class="styles__Div_ThumbnailWrapper-wpaxtq-0 cnqbds"><img class="aspectRatioContent" src="https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/9d9817ff-4880-43ac-86ed-20edd71e7513.jpeg" /></div>
+                      <div class="styles__Div_LoadingSpinner-wpaxtq-3 iaPgYB">
+                        <div class="styles__Div_SpinnerStyle-s1m0r17o-0 cMzHwG" color="#fff"></div>
+                      </div><button class="styles__Button_Play-wpaxtq-2 hLsUUl"><img class="styles__Img_PlayIcon-wpaxtq-1 gtDScl styles__Img_PostRoll-s2yod4k-3 jGpSjy"
+                          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4yICg1MTE2MCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+ODE4QzQ4NUQtNDAyRC00NUZBLTlGQzAtODc0Mzc4NTM2M0IyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbi0vLVBsYXllci0vLVBsYXkiPgogICAgICAgICAgICA8ZyBpZD0iU2hhcGUiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjE2IDEwIDE2IDM4IDM4IDI0Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBwb2ludHM9IjAgMCA0OCAwIDQ4IDQ4IDAgNDgiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Play</label></button>
+                    </div>
+                  </div>
+                  <div class="styles__Div_PostRollContainer-s15uts9k-4 gNbJfr">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 oCdRH"><button class="styles__Button_PostRoll-s2yod4k-1 llDfSU"><img
+                          class="styles__Img_PostRoll-s2yod4k-3 jGpSjy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGg0OHY0OEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTI0IDE0VjdsLTguNzUgOC43NUwyNCAyNC41di03YzUuNzkzIDAgMTAuNSA0LjcwNyAxMC41IDEwLjUgMCA1Ljc5Mi00LjcwNyAxMC41LTEwLjUgMTAuNVMxMy41IDMzLjc5MiAxMy41IDI4SDEwYzAgNy43MzUgNi4yNjUgMTQgMTQgMTRzMTQtNi4yNjUgMTQtMTQtNi4yNjUtMTQtMTQtMTR6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Replay</label></button></div>
+                  </div>
+                  <div class="styles__Div_MuteContainer-s15uts9k-3 iUJnyd"><button class="styles__Button_MuteButton-x9lrpr-0 OPpzL"><img
+                        class="styles__Img_VolumeOn-x9lrpr-1 kUumMr" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDM2IDM0Ij4KICAgIDxkZWZzPgogICAgICAgIDxmaWx0ZXIgaWQ9ImEiIHdpZHRoPSIxODMuMyUiIGhlaWdodD0iMTgzLjMlIiB4PSItNDEuNyUiIHk9Ii00MS43JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij4KICAgICAgICAgICAgPGZlTW9ycGhvbG9neSBpbj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJkaWxhdGUiIHJhZGl1cz0iMSIgcmVzdWx0PSJzaGFkb3dTcHJlYWRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dTcHJlYWRPdXRlcjEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZU1vcnBob2xvZ3kgaW49IlNvdXJjZUFscGhhIiByYWRpdXM9IjEiIHJlc3VsdD0ic2hhZG93SW5uZXIiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dJbm5lciIgcmVzdWx0PSJzaGFkb3dJbm5lciIvPgogICAgICAgICAgICA8ZmVDb21wb3NpdGUgaW49InNoYWRvd09mZnNldE91dGVyMSIgaW4yPSJzaGFkb3dJbm5lciIgb3BlcmF0b3I9Im91dCIgcmVzdWx0PSJzaGFkb3dPZmZzZXRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlR2F1c3NpYW5CbHVyIGluPSJzaGFkb3dPZmZzZXRPdXRlcjEiIHJlc3VsdD0ic2hhZG93Qmx1ck91dGVyMSIgc3RkRGV2aWF0aW9uPSIzIi8+CiAgICAgICAgICAgIDxmZUNvbG9yTWF0cml4IGluPSJzaGFkb3dCbHVyT3V0ZXIxIiByZXN1bHQ9InNoYWRvd01hdHJpeE91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgICAgICA8ZmVNZXJnZT4KICAgICAgICAgICAgICAgIDxmZU1lcmdlTm9kZSBpbj0ic2hhZG93TWF0cml4T3V0ZXIxIi8+CiAgICAgICAgICAgICAgICA8ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz4KICAgICAgICAgICAgPC9mZU1lcmdlPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8ZyBmaWx0ZXI9InVybCgjYSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuOCA1KSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE2LjUgMTJBNC41IDQuNSAwIDAgMCAxNCA3Ljk3djIuMjFsMi40NSAyLjQ1Yy4wMy0uMi4wNS0uNDEuMDUtLjYzem0yLjUgMGMwIC45NC0uMiAxLjgyLS41NCAyLjY0bDEuNTEgMS41MUE4Ljc5NiA4Ljc5NiAwIDAgMCAyMSAxMmMwLTQuMjgtMi45OS03Ljg2LTctOC43N3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXpNNC4yNyAzTDMgNC4yNyA3LjczIDlIM3Y2aDRsNSA1di02LjczbDQuMjUgNC4yNWMtLjY3LjUyLTEuNDIuOTMtMi4yNSAxLjE4djIuMDZhOC45OSA4Ljk5IDAgMCAwIDMuNjktMS44MUwxOS43MyAyMSAyMSAxOS43M2wtOS05TDQuMjcgM3pNMTIgNEw5LjkxIDYuMDkgMTIgOC4xOFY0eiIvPgogICAgICAgICAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" /><img
+                        class="styles__Img_VolumeOff-x9lrpr-2 ccNuic" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzYiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNiAzNCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYiIgZD0iTTMgOXY2aDRsNSA1VjRMNyA5SDN6bTEzLjUgM0E0LjUgNC41IDAgMCAwIDE0IDcuOTd2OC4wNWMxLjQ4LS43MyAyLjUtMi4yNSAyLjUtNC4wMnpNMTQgMy4yM3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXMtMi4xMSA1Ljg1LTUgNi43MXYyLjA2YzQuMDEtLjkxIDctNC40OSA3LTguNzcgMC00LjI4LTIuOTktNy44Ni03LTguNzd6Ii8+CiAgICAgICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAyLjYlIiB4PSItNTAlIiB5PSItNTEuMyUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgICAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICAgICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8cGF0aCBkPSJNNS44IDVoMjR2MjRoLTI0eiIvPgogICAgICAgIDxnIGZpbGwtcnVsZT0ibm9uemVybyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS44IDUpIj4KICAgICAgICAgICAgPHVzZSBmaWxsPSIjMDAwIiBmaWx0ZXI9InVybCgjYSkiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICAgICAgICAgIDx1c2UgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpocmVmPSIjYiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" /></button></div>
+                  <div class="styles__Div_TopGradient-s15uts9k-2 jmKwjB"></div>
+                  <div class="styles__Div_OptionsMenu-s15uts9k-1 cKQUQv">
+                    <ul class="styles__Ul_OptionsMenu-k255l0-0 cEpUvN">
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNiAyOCI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTEyIDhjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem0wIDJjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yem0wIDZjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjU1MCUiIGhlaWdodD0iMjEyLjUlIiB4PSItMjI1JSIgeT0iLTU2LjIlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPgogICAgICA8ZmVPZmZzZXQgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9InNoYWRvd09mZnNldE91dGVyMSIvPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgaW49InNoYWRvd09mZnNldE91dGVyMSIgcmVzdWx0PSJzaGFkb3dCbHVyT3V0ZXIxIiBzdGREZXZpYXRpb249IjMiLz4KICAgICAgPGZlQ29sb3JNYXRyaXggaW49InNoYWRvd0JsdXJPdXRlcjEiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC41IDAiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBhdGggZD0iTS00IDJoMjR2MjRILTR6Ii8+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNCAyKSI+CiAgICAgIDx1c2UgZmlsbD0iIzAwMCIgZmlsdGVyPSJ1cmwoI2EpIiB4bGluazpocmVmPSIjYiIvPgogICAgICA8dXNlIGZpbGw9IiNGRkYiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMCAzMiI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTE4IDE2LjA4Yy0uNzYgMC0xLjQ0LjMtMS45Ni43N0w4LjkxIDEyLjdjLjA1LS4yMy4wOS0uNDYuMDktLjcgMC0uMjQtLjA0LS40Ny0uMDktLjdsNy4wNS00LjExYy41NC41IDEuMjUuODEgMi4wNC44MSAxLjY2IDAgMy0xLjM0IDMtM3MtMS4zNC0zLTMtMy0zIDEuMzQtMyAzYzAgLjI0LjA0LjQ3LjA5LjdMOC4wNCA5LjgxQzcuNSA5LjMxIDYuNzkgOSA2IDljLTEuNjYgMC0zIDEuMzQtMyAzczEuMzQgMyAzIDNjLjc5IDAgMS41LS4zMSAyLjA0LS44MWw3LjEyIDQuMTZjLS4wNS4yMS0uMDguNDMtLjA4LjY1IDAgMS42MSAxLjMxIDIuOTIgMi45MiAyLjkyIDEuNjEgMCAyLjkyLTEuMzEgMi45Mi0yLjkyIDAtMS42MS0xLjMxLTIuOTItMi45Mi0yLjkyeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMTkwLjQlIiB4PSItNTAlIiB5PSItNDUuMiUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8cGF0aCBkPSJNMyA0aDI0djI0SDN6Ii8+CiAgICA8ZyBmaWxsLXJ1bGU9Im5vbnplcm8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgNCkiPgogICAgICA8dXNlIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNhKSIgeGxpbms6aHJlZj0iI2IiLz4KICAgICAgPHVzZSBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                    </ul>
+                  </div>
+                  <div class="styles__Div_TranscriptContainer-s15uts9k-6 hNFJoD">
+                    <div class="styles__Div_TranscriptWrapperOuter-s37px9k-0 aWddJ">
+                      <div class="styles__Div_TranscriptWrapperInner-s37px9k-1 jOLCbO">
+                        <p class="styles__P_Transcript-s37px9k-2 kUMVSP">I gotta couple of more weeks to go for my goal
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class='row pull-right' style='margin-top:20px;'>
-            <div class='col-sm-12' id='captcha_container'>
-              <button class='g-recaptcha' data-badge='inline' data-sitekey='6Lfy6GcUAAAAADBYLXkanIcAEAol5QmSRwopWvXQ'
-                data-theme='dark'></button>
+          <div class="styles__Div_FeedSection-s2s72tg-0 cRserb">
+            <div class="styles__Div_HeadingContainer-s2s72tg-1 gLcgdH">
+              <h5 class="styles__H5_Heading5-s11g8p9p-4 kVsnpk">Movies</h5>
+            </div>
+            <div class="styles__Div_FeedSectionItemsContainer-s2s72tg-2 jdgCvv">
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/movie/jurassic-park-aESjNYxrr8hy">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/826c80f6-0c10-4fe0-b326-fb42158a0c34.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Jurassic
+                          Park</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/movie/fargo-YPzUujqmidVR">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/111e1c02-a052-445a-bbc8-b50fa906b06d.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Fargo</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/movie/star-wars-episode-v-the-empire-strikes-back-QEmBVy1Tbzsr">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/b81bfb52-dc89-4ae2-9ed7-703316f83d51.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Star
+                          Wars: Episode V - The Empire Strikes Back</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/movie/office-space-VNTAi4CWqlMw">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/18abbefc-1aea-4056-b93a-cc4a9ce51747.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Office
+                          Space</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/movie/the-big-short-n5wbiGZgIJ8c">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/6bae385e-e1b1-483b-afea-27bf1a3a3191.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">The
+                          Big Short</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/movie/nightcrawler-QYZqKIQRyjuq">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/d878ed87-353a-4c6f-8457-cdfe606c7e14.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Nightcrawler</label></div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="styles__Div_FeedSection-s2s72tg-0 cRserb">
+            <div class="styles__Div_HeadingContainer-s2s72tg-1 gLcgdH">
+              <h5 class="styles__H5_Heading5-s11g8p9p-4 kVsnpk">Shows</h5>
+            </div>
+            <div class="styles__Div_FeedSectionItemsContainer-s2s72tg-2 jdgCvv">
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/show/love-island-cJ4GeTgYN2WZ">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/9bfbfe1e-1ac8-49c0-bc1e-3c0c546b7b5c.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Love
+                          Island</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/show/rupauls-drag-race-oQuxGa4xqDgd">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/cc515d56-af43-4def-95ba-11ec918a5aa6.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">RuPaul&#x27;s
+                          Drag Race</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/show/the-simple-life-AucszRhRfTBY">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/f89520cc-822a-42d6-ad9a-d1e079908f60.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">The
+                          Simple Life</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/show/dawsons-creek-2YwCBf3MeyZs">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/ba4ea477-af70-478d-aa4b-ce6c6be35940.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Dawson&#x27;s
+                          Creek</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/show/ishq-subhan-allah-4WJYh0lAwXwE">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Ishq
+                          Subhan Allah</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_MovieItemContainer-kqgb9e-0 bFQXr">
+                <div class="styles__Div_MovieItem-fv00hp-0 fJnrZN"><a href="/show/saturday-night-live-GsDxEljj6ZSJ">
+                    <div><img class="styles__Img_Poster-fv00hp-1 jkDIpo" src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/0fb49244-9157-42b2-a456-e791fde11471.jpg" />
+                      <div class="styles__Div_MovieTitleWrapper-fv00hp-2 kEdNHB"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Saturday
+                          Night Live</label></div>
+                    </div>
+                  </a></div>
+              </div>
+            </div>
+          </div>
+          <div class="styles__Div_FeedSection-s2s72tg-0 cRserb">
+            <div class="styles__Div_HeadingContainer-s2s72tg-1 gLcgdH">
+              <h5 class="styles__H5_Heading5-s11g8p9p-4 kVsnpk">Recently Added</h5>
+            </div>
+            <div class="styles__Div_FeedSectionItemsContainer-s2s72tg-2 jdgCvv">
+              <div class="styles__Div_CorePlayerContainer-kqgb9e-2 fyXXMy">
+                <div class="styles__Div_CorePlayer-s15uts9k-0 bcSyAR">
+                  <div class="styles__Div_CoreVideoWrapper-s1gflf96-0 cwLiRG">
+                    <div data-vjs-player="true"><video preload="auto" playsinline="" class="dubsmash-video"></video></div>
+                  </div>
+                  <div class="styles__Div_PreRollContainer-s15uts9k-5 gUlEzS">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 dTAGoC">
+                      <div class="styles__Div_ThumbnailWrapper-wpaxtq-0 cnqbds"><img class="aspectRatioContent" src="https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/4552bfa1-4e32-439e-bd19-b31dc6c3b870.jpeg" /></div>
+                      <div class="styles__Div_LoadingSpinner-wpaxtq-3 iaPgYB">
+                        <div class="styles__Div_SpinnerStyle-s1m0r17o-0 cMzHwG" color="#fff"></div>
+                      </div><button class="styles__Button_Play-wpaxtq-2 hLsUUl"><img class="styles__Img_PlayIcon-wpaxtq-1 gtDScl styles__Img_PostRoll-s2yod4k-3 jGpSjy"
+                          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4yICg1MTE2MCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+ODE4QzQ4NUQtNDAyRC00NUZBLTlGQzAtODc0Mzc4NTM2M0IyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbi0vLVBsYXllci0vLVBsYXkiPgogICAgICAgICAgICA8ZyBpZD0iU2hhcGUiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjE2IDEwIDE2IDM4IDM4IDI0Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBwb2ludHM9IjAgMCA0OCAwIDQ4IDQ4IDAgNDgiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Play</label></button>
+                    </div>
+                  </div>
+                  <div class="styles__Div_PostRollContainer-s15uts9k-4 gNbJfr">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 oCdRH"><button class="styles__Button_PostRoll-s2yod4k-1 llDfSU"><img
+                          class="styles__Img_PostRoll-s2yod4k-3 jGpSjy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGg0OHY0OEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTI0IDE0VjdsLTguNzUgOC43NUwyNCAyNC41di03YzUuNzkzIDAgMTAuNSA0LjcwNyAxMC41IDEwLjUgMCA1Ljc5Mi00LjcwNyAxMC41LTEwLjUgMTAuNVMxMy41IDMzLjc5MiAxMy41IDI4SDEwYzAgNy43MzUgNi4yNjUgMTQgMTQgMTRzMTQtNi4yNjUgMTQtMTQtNi4yNjUtMTQtMTQtMTR6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Replay</label></button></div>
+                  </div>
+                  <div class="styles__Div_MuteContainer-s15uts9k-3 iUJnyd"><button class="styles__Button_MuteButton-x9lrpr-0 OPpzL"><img
+                        class="styles__Img_VolumeOn-x9lrpr-1 kUumMr" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDM2IDM0Ij4KICAgIDxkZWZzPgogICAgICAgIDxmaWx0ZXIgaWQ9ImEiIHdpZHRoPSIxODMuMyUiIGhlaWdodD0iMTgzLjMlIiB4PSItNDEuNyUiIHk9Ii00MS43JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij4KICAgICAgICAgICAgPGZlTW9ycGhvbG9neSBpbj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJkaWxhdGUiIHJhZGl1cz0iMSIgcmVzdWx0PSJzaGFkb3dTcHJlYWRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dTcHJlYWRPdXRlcjEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZU1vcnBob2xvZ3kgaW49IlNvdXJjZUFscGhhIiByYWRpdXM9IjEiIHJlc3VsdD0ic2hhZG93SW5uZXIiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dJbm5lciIgcmVzdWx0PSJzaGFkb3dJbm5lciIvPgogICAgICAgICAgICA8ZmVDb21wb3NpdGUgaW49InNoYWRvd09mZnNldE91dGVyMSIgaW4yPSJzaGFkb3dJbm5lciIgb3BlcmF0b3I9Im91dCIgcmVzdWx0PSJzaGFkb3dPZmZzZXRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlR2F1c3NpYW5CbHVyIGluPSJzaGFkb3dPZmZzZXRPdXRlcjEiIHJlc3VsdD0ic2hhZG93Qmx1ck91dGVyMSIgc3RkRGV2aWF0aW9uPSIzIi8+CiAgICAgICAgICAgIDxmZUNvbG9yTWF0cml4IGluPSJzaGFkb3dCbHVyT3V0ZXIxIiByZXN1bHQ9InNoYWRvd01hdHJpeE91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgICAgICA8ZmVNZXJnZT4KICAgICAgICAgICAgICAgIDxmZU1lcmdlTm9kZSBpbj0ic2hhZG93TWF0cml4T3V0ZXIxIi8+CiAgICAgICAgICAgICAgICA8ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz4KICAgICAgICAgICAgPC9mZU1lcmdlPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8ZyBmaWx0ZXI9InVybCgjYSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuOCA1KSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE2LjUgMTJBNC41IDQuNSAwIDAgMCAxNCA3Ljk3djIuMjFsMi40NSAyLjQ1Yy4wMy0uMi4wNS0uNDEuMDUtLjYzem0yLjUgMGMwIC45NC0uMiAxLjgyLS41NCAyLjY0bDEuNTEgMS41MUE4Ljc5NiA4Ljc5NiAwIDAgMCAyMSAxMmMwLTQuMjgtMi45OS03Ljg2LTctOC43N3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXpNNC4yNyAzTDMgNC4yNyA3LjczIDlIM3Y2aDRsNSA1di02LjczbDQuMjUgNC4yNWMtLjY3LjUyLTEuNDIuOTMtMi4yNSAxLjE4djIuMDZhOC45OSA4Ljk5IDAgMCAwIDMuNjktMS44MUwxOS43MyAyMSAyMSAxOS43M2wtOS05TDQuMjcgM3pNMTIgNEw5LjkxIDYuMDkgMTIgOC4xOFY0eiIvPgogICAgICAgICAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" /><img
+                        class="styles__Img_VolumeOff-x9lrpr-2 ccNuic" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzYiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNiAzNCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYiIgZD0iTTMgOXY2aDRsNSA1VjRMNyA5SDN6bTEzLjUgM0E0LjUgNC41IDAgMCAwIDE0IDcuOTd2OC4wNWMxLjQ4LS43MyAyLjUtMi4yNSAyLjUtNC4wMnpNMTQgMy4yM3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXMtMi4xMSA1Ljg1LTUgNi43MXYyLjA2YzQuMDEtLjkxIDctNC40OSA3LTguNzcgMC00LjI4LTIuOTktNy44Ni03LTguNzd6Ii8+CiAgICAgICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAyLjYlIiB4PSItNTAlIiB5PSItNTEuMyUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgICAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICAgICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8cGF0aCBkPSJNNS44IDVoMjR2MjRoLTI0eiIvPgogICAgICAgIDxnIGZpbGwtcnVsZT0ibm9uemVybyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS44IDUpIj4KICAgICAgICAgICAgPHVzZSBmaWxsPSIjMDAwIiBmaWx0ZXI9InVybCgjYSkiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICAgICAgICAgIDx1c2UgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpocmVmPSIjYiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" /></button></div>
+                  <div class="styles__Div_TopGradient-s15uts9k-2 jmKwjB"></div>
+                  <h3 class="styles__H3_Heading-s668djs-0 evkoxy"><a href="/movie/jurassic-park-aESjNYxrr8hy">Jurassic
+                      Park</a></h3>
+                  <div class="styles__Div_OptionsMenu-s15uts9k-1 cKQUQv">
+                    <ul class="styles__Ul_OptionsMenu-k255l0-0 cEpUvN">
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNiAyOCI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTEyIDhjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem0wIDJjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yem0wIDZjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjU1MCUiIGhlaWdodD0iMjEyLjUlIiB4PSItMjI1JSIgeT0iLTU2LjIlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPgogICAgICA8ZmVPZmZzZXQgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9InNoYWRvd09mZnNldE91dGVyMSIvPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgaW49InNoYWRvd09mZnNldE91dGVyMSIgcmVzdWx0PSJzaGFkb3dCbHVyT3V0ZXIxIiBzdGREZXZpYXRpb249IjMiLz4KICAgICAgPGZlQ29sb3JNYXRyaXggaW49InNoYWRvd0JsdXJPdXRlcjEiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC41IDAiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBhdGggZD0iTS00IDJoMjR2MjRILTR6Ii8+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNCAyKSI+CiAgICAgIDx1c2UgZmlsbD0iIzAwMCIgZmlsdGVyPSJ1cmwoI2EpIiB4bGluazpocmVmPSIjYiIvPgogICAgICA8dXNlIGZpbGw9IiNGRkYiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMCAzMiI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTE4IDE2LjA4Yy0uNzYgMC0xLjQ0LjMtMS45Ni43N0w4LjkxIDEyLjdjLjA1LS4yMy4wOS0uNDYuMDktLjcgMC0uMjQtLjA0LS40Ny0uMDktLjdsNy4wNS00LjExYy41NC41IDEuMjUuODEgMi4wNC44MSAxLjY2IDAgMy0xLjM0IDMtM3MtMS4zNC0zLTMtMy0zIDEuMzQtMyAzYzAgLjI0LjA0LjQ3LjA5LjdMOC4wNCA5LjgxQzcuNSA5LjMxIDYuNzkgOSA2IDljLTEuNjYgMC0zIDEuMzQtMyAzczEuMzQgMyAzIDNjLjc5IDAgMS41LS4zMSAyLjA0LS44MWw3LjEyIDQuMTZjLS4wNS4yMS0uMDguNDMtLjA4LjY1IDAgMS42MSAxLjMxIDIuOTIgMi45MiAyLjkyIDEuNjEgMCAyLjkyLTEuMzEgMi45Mi0yLjkyIDAtMS42MS0xLjMxLTIuOTItMi45Mi0yLjkyeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMTkwLjQlIiB4PSItNTAlIiB5PSItNDUuMiUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8cGF0aCBkPSJNMyA0aDI0djI0SDN6Ii8+CiAgICA8ZyBmaWxsLXJ1bGU9Im5vbnplcm8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgNCkiPgogICAgICA8dXNlIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNhKSIgeGxpbms6aHJlZj0iI2IiLz4KICAgICAgPHVzZSBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                    </ul>
+                  </div>
+                  <div class="styles__Div_TranscriptContainer-s15uts9k-6 hNFJoD">
+                    <div class="styles__Div_TranscriptWrapperOuter-s37px9k-0 aWddJ">
+                      <div class="styles__Div_TranscriptWrapperInner-s37px9k-1 jOLCbO">
+                        <p class="styles__P_Transcript-s37px9k-2 kUMVSP">What do you want? A little food? Look at me. I
+                          just </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="styles__Div_CorePlayerContainer-kqgb9e-2 fyXXMy">
+                <div class="styles__Div_CorePlayer-s15uts9k-0 bcSyAR">
+                  <div class="styles__Div_CoreVideoWrapper-s1gflf96-0 cwLiRG">
+                    <div data-vjs-player="true"><video preload="auto" playsinline="" class="dubsmash-video"></video></div>
+                  </div>
+                  <div class="styles__Div_PreRollContainer-s15uts9k-5 gUlEzS">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 dTAGoC">
+                      <div class="styles__Div_ThumbnailWrapper-wpaxtq-0 cnqbds"><img class="aspectRatioContent" src="https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/41d1cfef-2398-4aa0-81b4-9630cfa060b1.jpeg" /></div>
+                      <div class="styles__Div_LoadingSpinner-wpaxtq-3 iaPgYB">
+                        <div class="styles__Div_SpinnerStyle-s1m0r17o-0 cMzHwG" color="#fff"></div>
+                      </div><button class="styles__Button_Play-wpaxtq-2 hLsUUl"><img class="styles__Img_PlayIcon-wpaxtq-1 gtDScl styles__Img_PostRoll-s2yod4k-3 jGpSjy"
+                          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4yICg1MTE2MCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+ODE4QzQ4NUQtNDAyRC00NUZBLTlGQzAtODc0Mzc4NTM2M0IyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbi0vLVBsYXllci0vLVBsYXkiPgogICAgICAgICAgICA8ZyBpZD0iU2hhcGUiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjE2IDEwIDE2IDM4IDM4IDI0Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBwb2ludHM9IjAgMCA0OCAwIDQ4IDQ4IDAgNDgiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Play</label></button>
+                    </div>
+                  </div>
+                  <div class="styles__Div_PostRollContainer-s15uts9k-4 gNbJfr">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 oCdRH"><button class="styles__Button_PostRoll-s2yod4k-1 llDfSU"><img
+                          class="styles__Img_PostRoll-s2yod4k-3 jGpSjy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGg0OHY0OEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTI0IDE0VjdsLTguNzUgOC43NUwyNCAyNC41di03YzUuNzkzIDAgMTAuNSA0LjcwNyAxMC41IDEwLjUgMCA1Ljc5Mi00LjcwNyAxMC41LTEwLjUgMTAuNVMxMy41IDMzLjc5MiAxMy41IDI4SDEwYzAgNy43MzUgNi4yNjUgMTQgMTQgMTRzMTQtNi4yNjUgMTQtMTQtNi4yNjUtMTQtMTQtMTR6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Replay</label></button></div>
+                  </div>
+                  <div class="styles__Div_MuteContainer-s15uts9k-3 iUJnyd"><button class="styles__Button_MuteButton-x9lrpr-0 OPpzL"><img
+                        class="styles__Img_VolumeOn-x9lrpr-1 kUumMr" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDM2IDM0Ij4KICAgIDxkZWZzPgogICAgICAgIDxmaWx0ZXIgaWQ9ImEiIHdpZHRoPSIxODMuMyUiIGhlaWdodD0iMTgzLjMlIiB4PSItNDEuNyUiIHk9Ii00MS43JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij4KICAgICAgICAgICAgPGZlTW9ycGhvbG9neSBpbj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJkaWxhdGUiIHJhZGl1cz0iMSIgcmVzdWx0PSJzaGFkb3dTcHJlYWRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dTcHJlYWRPdXRlcjEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZU1vcnBob2xvZ3kgaW49IlNvdXJjZUFscGhhIiByYWRpdXM9IjEiIHJlc3VsdD0ic2hhZG93SW5uZXIiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dJbm5lciIgcmVzdWx0PSJzaGFkb3dJbm5lciIvPgogICAgICAgICAgICA8ZmVDb21wb3NpdGUgaW49InNoYWRvd09mZnNldE91dGVyMSIgaW4yPSJzaGFkb3dJbm5lciIgb3BlcmF0b3I9Im91dCIgcmVzdWx0PSJzaGFkb3dPZmZzZXRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlR2F1c3NpYW5CbHVyIGluPSJzaGFkb3dPZmZzZXRPdXRlcjEiIHJlc3VsdD0ic2hhZG93Qmx1ck91dGVyMSIgc3RkRGV2aWF0aW9uPSIzIi8+CiAgICAgICAgICAgIDxmZUNvbG9yTWF0cml4IGluPSJzaGFkb3dCbHVyT3V0ZXIxIiByZXN1bHQ9InNoYWRvd01hdHJpeE91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgICAgICA8ZmVNZXJnZT4KICAgICAgICAgICAgICAgIDxmZU1lcmdlTm9kZSBpbj0ic2hhZG93TWF0cml4T3V0ZXIxIi8+CiAgICAgICAgICAgICAgICA8ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz4KICAgICAgICAgICAgPC9mZU1lcmdlPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8ZyBmaWx0ZXI9InVybCgjYSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuOCA1KSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE2LjUgMTJBNC41IDQuNSAwIDAgMCAxNCA3Ljk3djIuMjFsMi40NSAyLjQ1Yy4wMy0uMi4wNS0uNDEuMDUtLjYzem0yLjUgMGMwIC45NC0uMiAxLjgyLS41NCAyLjY0bDEuNTEgMS41MUE4Ljc5NiA4Ljc5NiAwIDAgMCAyMSAxMmMwLTQuMjgtMi45OS03Ljg2LTctOC43N3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXpNNC4yNyAzTDMgNC4yNyA3LjczIDlIM3Y2aDRsNSA1di02LjczbDQuMjUgNC4yNWMtLjY3LjUyLTEuNDIuOTMtMi4yNSAxLjE4djIuMDZhOC45OSA4Ljk5IDAgMCAwIDMuNjktMS44MUwxOS43MyAyMSAyMSAxOS43M2wtOS05TDQuMjcgM3pNMTIgNEw5LjkxIDYuMDkgMTIgOC4xOFY0eiIvPgogICAgICAgICAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" /><img
+                        class="styles__Img_VolumeOff-x9lrpr-2 ccNuic" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzYiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNiAzNCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYiIgZD0iTTMgOXY2aDRsNSA1VjRMNyA5SDN6bTEzLjUgM0E0LjUgNC41IDAgMCAwIDE0IDcuOTd2OC4wNWMxLjQ4LS43MyAyLjUtMi4yNSAyLjUtNC4wMnpNMTQgMy4yM3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXMtMi4xMSA1Ljg1LTUgNi43MXYyLjA2YzQuMDEtLjkxIDctNC40OSA3LTguNzcgMC00LjI4LTIuOTktNy44Ni03LTguNzd6Ii8+CiAgICAgICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAyLjYlIiB4PSItNTAlIiB5PSItNTEuMyUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgICAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICAgICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8cGF0aCBkPSJNNS44IDVoMjR2MjRoLTI0eiIvPgogICAgICAgIDxnIGZpbGwtcnVsZT0ibm9uemVybyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS44IDUpIj4KICAgICAgICAgICAgPHVzZSBmaWxsPSIjMDAwIiBmaWx0ZXI9InVybCgjYSkiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICAgICAgICAgIDx1c2UgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpocmVmPSIjYiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" /></button></div>
+                  <div class="styles__Div_TopGradient-s15uts9k-2 jmKwjB"></div>
+                  <h3 class="styles__H3_Heading-s668djs-0 evkoxy"><a href="/show/love-island-cJ4GeTgYN2WZ">Love Island</a></h3>
+                  <div class="styles__Div_OptionsMenu-s15uts9k-1 cKQUQv">
+                    <ul class="styles__Ul_OptionsMenu-k255l0-0 cEpUvN">
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNiAyOCI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTEyIDhjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem0wIDJjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yem0wIDZjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjU1MCUiIGhlaWdodD0iMjEyLjUlIiB4PSItMjI1JSIgeT0iLTU2LjIlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPgogICAgICA8ZmVPZmZzZXQgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9InNoYWRvd09mZnNldE91dGVyMSIvPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgaW49InNoYWRvd09mZnNldE91dGVyMSIgcmVzdWx0PSJzaGFkb3dCbHVyT3V0ZXIxIiBzdGREZXZpYXRpb249IjMiLz4KICAgICAgPGZlQ29sb3JNYXRyaXggaW49InNoYWRvd0JsdXJPdXRlcjEiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC41IDAiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBhdGggZD0iTS00IDJoMjR2MjRILTR6Ii8+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNCAyKSI+CiAgICAgIDx1c2UgZmlsbD0iIzAwMCIgZmlsdGVyPSJ1cmwoI2EpIiB4bGluazpocmVmPSIjYiIvPgogICAgICA8dXNlIGZpbGw9IiNGRkYiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMCAzMiI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTE4IDE2LjA4Yy0uNzYgMC0xLjQ0LjMtMS45Ni43N0w4LjkxIDEyLjdjLjA1LS4yMy4wOS0uNDYuMDktLjcgMC0uMjQtLjA0LS40Ny0uMDktLjdsNy4wNS00LjExYy41NC41IDEuMjUuODEgMi4wNC44MSAxLjY2IDAgMy0xLjM0IDMtM3MtMS4zNC0zLTMtMy0zIDEuMzQtMyAzYzAgLjI0LjA0LjQ3LjA5LjdMOC4wNCA5LjgxQzcuNSA5LjMxIDYuNzkgOSA2IDljLTEuNjYgMC0zIDEuMzQtMyAzczEuMzQgMyAzIDNjLjc5IDAgMS41LS4zMSAyLjA0LS44MWw3LjEyIDQuMTZjLS4wNS4yMS0uMDguNDMtLjA4LjY1IDAgMS42MSAxLjMxIDIuOTIgMi45MiAyLjkyIDEuNjEgMCAyLjkyLTEuMzEgMi45Mi0yLjkyIDAtMS42MS0xLjMxLTIuOTItMi45Mi0yLjkyeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMTkwLjQlIiB4PSItNTAlIiB5PSItNDUuMiUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8cGF0aCBkPSJNMyA0aDI0djI0SDN6Ii8+CiAgICA8ZyBmaWxsLXJ1bGU9Im5vbnplcm8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgNCkiPgogICAgICA8dXNlIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNhKSIgeGxpbms6aHJlZj0iI2IiLz4KICAgICAgPHVzZSBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                    </ul>
+                  </div>
+                  <div class="styles__Div_TranscriptContainer-s15uts9k-6 hNFJoD">
+                    <div class="styles__Div_TranscriptWrapperOuter-s37px9k-0 aWddJ">
+                      <div class="styles__Div_TranscriptWrapperInner-s37px9k-1 jOLCbO">
+                        <p class="styles__P_Transcript-s37px9k-2 kUMVSP">It&#x27;s about to go down.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="styles__Div_CorePlayerContainer-kqgb9e-2 fyXXMy">
+                <div class="styles__Div_CorePlayer-s15uts9k-0 bcSyAR">
+                  <div class="styles__Div_CoreVideoWrapper-s1gflf96-0 cwLiRG">
+                    <div data-vjs-player="true"><video preload="auto" playsinline="" class="dubsmash-video"></video></div>
+                  </div>
+                  <div class="styles__Div_PreRollContainer-s15uts9k-5 gUlEzS">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 dTAGoC">
+                      <div class="styles__Div_ThumbnailWrapper-wpaxtq-0 cnqbds"><img class="aspectRatioContent" src="https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/d300fd33-c8b2-4b6d-86a7-05ce69a90bb9.jpeg" /></div>
+                      <div class="styles__Div_LoadingSpinner-wpaxtq-3 iaPgYB">
+                        <div class="styles__Div_SpinnerStyle-s1m0r17o-0 cMzHwG" color="#fff"></div>
+                      </div><button class="styles__Button_Play-wpaxtq-2 hLsUUl"><img class="styles__Img_PlayIcon-wpaxtq-1 gtDScl styles__Img_PostRoll-s2yod4k-3 jGpSjy"
+                          src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNDhweCIgaGVpZ2h0PSI0OHB4IiB2aWV3Qm94PSIwIDAgNDggNDgiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogc2tldGNodG9vbCA0OS4yICg1MTE2MCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+ODE4QzQ4NUQtNDAyRC00NUZBLTlGQzAtODc0Mzc4NTM2M0IyPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBza2V0Y2h0b29sLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iSWNvbi0vLVBsYXllci0vLVBsYXkiPgogICAgICAgICAgICA8ZyBpZD0iU2hhcGUiPgogICAgICAgICAgICAgICAgPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBwb2ludHM9IjE2IDEwIDE2IDM4IDM4IDI0Ij48L3BvbHlnb24+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBwb2ludHM9IjAgMCA0OCAwIDQ4IDQ4IDAgNDgiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Play</label></button>
+                    </div>
+                  </div>
+                  <div class="styles__Div_PostRollContainer-s15uts9k-4 gNbJfr">
+                    <div class="styles__Div_PostRoll-s2yod4k-0 oCdRH"><button class="styles__Button_PostRoll-s2yod4k-1 llDfSU"><img
+                          class="styles__Img_PostRoll-s2yod4k-3 jGpSjy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGg0OHY0OEgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTI0IDE0VjdsLTguNzUgOC43NUwyNCAyNC41di03YzUuNzkzIDAgMTAuNSA0LjcwNyAxMC41IDEwLjUgMCA1Ljc5Mi00LjcwNyAxMC41LTEwLjUgMTAuNVMxMy41IDMzLjc5MiAxMy41IDI4SDEwYzAgNy43MzUgNi4yNjUgMTQgMTQgMTRzMTQtNi4yNjUgMTQtMTQtNi4yNjUtMTQtMTQtMTR6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=" /><label
+                          class="styles__Label_PostRoll-s2yod4k-4 dPUlrP">Replay</label></button></div>
+                  </div>
+                  <div class="styles__Div_MuteContainer-s15uts9k-3 iUJnyd"><button class="styles__Button_MuteButton-x9lrpr-0 OPpzL"><img
+                        class="styles__Img_VolumeOn-x9lrpr-1 kUumMr" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNCIgdmlld0JveD0iMCAwIDM2IDM0Ij4KICAgIDxkZWZzPgogICAgICAgIDxmaWx0ZXIgaWQ9ImEiIHdpZHRoPSIxODMuMyUiIGhlaWdodD0iMTgzLjMlIiB4PSItNDEuNyUiIHk9Ii00MS43JSIgZmlsdGVyVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94Ij4KICAgICAgICAgICAgPGZlTW9ycGhvbG9neSBpbj0iU291cmNlQWxwaGEiIG9wZXJhdG9yPSJkaWxhdGUiIHJhZGl1cz0iMSIgcmVzdWx0PSJzaGFkb3dTcHJlYWRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dTcHJlYWRPdXRlcjEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZU1vcnBob2xvZ3kgaW49IlNvdXJjZUFscGhhIiByYWRpdXM9IjEiIHJlc3VsdD0ic2hhZG93SW5uZXIiLz4KICAgICAgICAgICAgPGZlT2Zmc2V0IGluPSJzaGFkb3dJbm5lciIgcmVzdWx0PSJzaGFkb3dJbm5lciIvPgogICAgICAgICAgICA8ZmVDb21wb3NpdGUgaW49InNoYWRvd09mZnNldE91dGVyMSIgaW4yPSJzaGFkb3dJbm5lciIgb3BlcmF0b3I9Im91dCIgcmVzdWx0PSJzaGFkb3dPZmZzZXRPdXRlcjEiLz4KICAgICAgICAgICAgPGZlR2F1c3NpYW5CbHVyIGluPSJzaGFkb3dPZmZzZXRPdXRlcjEiIHJlc3VsdD0ic2hhZG93Qmx1ck91dGVyMSIgc3RkRGV2aWF0aW9uPSIzIi8+CiAgICAgICAgICAgIDxmZUNvbG9yTWF0cml4IGluPSJzaGFkb3dCbHVyT3V0ZXIxIiByZXN1bHQ9InNoYWRvd01hdHJpeE91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgICAgICA8ZmVNZXJnZT4KICAgICAgICAgICAgICAgIDxmZU1lcmdlTm9kZSBpbj0ic2hhZG93TWF0cml4T3V0ZXIxIi8+CiAgICAgICAgICAgICAgICA8ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz4KICAgICAgICAgICAgPC9mZU1lcmdlPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8ZyBmaWx0ZXI9InVybCgjYSkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuOCA1KSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTE2LjUgMTJBNC41IDQuNSAwIDAgMCAxNCA3Ljk3djIuMjFsMi40NSAyLjQ1Yy4wMy0uMi4wNS0uNDEuMDUtLjYzem0yLjUgMGMwIC45NC0uMiAxLjgyLS41NCAyLjY0bDEuNTEgMS41MUE4Ljc5NiA4Ljc5NiAwIDAgMCAyMSAxMmMwLTQuMjgtMi45OS03Ljg2LTctOC43N3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXpNNC4yNyAzTDMgNC4yNyA3LjczIDlIM3Y2aDRsNSA1di02LjczbDQuMjUgNC4yNWMtLjY3LjUyLTEuNDIuOTMtMi4yNSAxLjE4djIuMDZhOC45OSA4Ljk5IDAgMCAwIDMuNjktMS44MUwxOS43MyAyMSAyMSAxOS43M2wtOS05TDQuMjcgM3pNMTIgNEw5LjkxIDYuMDkgMTIgOC4xOFY0eiIvPgogICAgICAgICAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" /><img
+                        class="styles__Img_VolumeOff-x9lrpr-2 ccNuic" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzYiIGhlaWdodD0iMzQiIHZpZXdCb3g9IjAgMCAzNiAzNCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYiIgZD0iTTMgOXY2aDRsNSA1VjRMNyA5SDN6bTEzLjUgM0E0LjUgNC41IDAgMCAwIDE0IDcuOTd2OC4wNWMxLjQ4LS43MyAyLjUtMi4yNSAyLjUtNC4wMnpNMTQgMy4yM3YyLjA2YzIuODkuODYgNSAzLjU0IDUgNi43MXMtMi4xMSA1Ljg1LTUgNi43MXYyLjA2YzQuMDEtLjkxIDctNC40OSA3LTguNzcgMC00LjI4LTIuOTktNy44Ni03LTguNzd6Ii8+CiAgICAgICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAyLjYlIiB4PSItNTAlIiB5PSItNTEuMyUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgICAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgICAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICAgICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgICAgIDwvZmlsdGVyPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMTggMzRDOC42MjYgMzQgMSAyNi4zNzQgMSAxNyAxIDcuNjI2IDguNjI2IDAgMTggMGM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTd6IiBvcGFjaXR5PSIuNTgiLz4KICAgICAgICA8cGF0aCBkPSJNNS44IDVoMjR2MjRoLTI0eiIvPgogICAgICAgIDxnIGZpbGwtcnVsZT0ibm9uemVybyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS44IDUpIj4KICAgICAgICAgICAgPHVzZSBmaWxsPSIjMDAwIiBmaWx0ZXI9InVybCgjYSkiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICAgICAgICAgIDx1c2UgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiB4bGluazpocmVmPSIjYiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" /></button></div>
+                  <div class="styles__Div_TopGradient-s15uts9k-2 jmKwjB"></div>
+                  <h3 class="styles__H3_Heading-s668djs-0 evkoxy"><a href="/show/love-island-cJ4GeTgYN2WZ">Love Island</a></h3>
+                  <div class="styles__Div_OptionsMenu-s15uts9k-1 cKQUQv">
+                    <ul class="styles__Ul_OptionsMenu-k255l0-0 cEpUvN">
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNiAyOCI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTEyIDhjMS4xIDAgMi0uOSAyLTJzLS45LTItMi0yLTIgLjktMiAyIC45IDIgMiAyem0wIDJjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yem0wIDZjLTEuMSAwLTIgLjktMiAycy45IDIgMiAyIDItLjkgMi0yLS45LTItMi0yeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjU1MCUiIGhlaWdodD0iMjEyLjUlIiB4PSItMjI1JSIgeT0iLTU2LjIlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giPgogICAgICA8ZmVPZmZzZXQgaW49IlNvdXJjZUFscGhhIiByZXN1bHQ9InNoYWRvd09mZnNldE91dGVyMSIvPgogICAgICA8ZmVHYXVzc2lhbkJsdXIgaW49InNoYWRvd09mZnNldE91dGVyMSIgcmVzdWx0PSJzaGFkb3dCbHVyT3V0ZXIxIiBzdGREZXZpYXRpb249IjMiLz4KICAgICAgPGZlQ29sb3JNYXRyaXggaW49InNoYWRvd0JsdXJPdXRlcjEiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC41IDAiLz4KICAgIDwvZmlsdGVyPgogIDwvZGVmcz4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBhdGggZD0iTS00IDJoMjR2MjRILTR6Ii8+CiAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNCAyKSI+CiAgICAgIDx1c2UgZmlsbD0iIzAwMCIgZmlsdGVyPSJ1cmwoI2EpIiB4bGluazpocmVmPSIjYiIvPgogICAgICA8dXNlIGZpbGw9IiNGRkYiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                      <li class="styles__Li_MenuItem-k255l0-1 gOwZIJ"><img class="styles__Img_OptionButton-s43i7i6-0 hTKYjT"
+                          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMCAzMiI+CiAgPGRlZnM+CiAgICA8cGF0aCBpZD0iYiIgZD0iTTE4IDE2LjA4Yy0uNzYgMC0xLjQ0LjMtMS45Ni43N0w4LjkxIDEyLjdjLjA1LS4yMy4wOS0uNDYuMDktLjcgMC0uMjQtLjA0LS40Ny0uMDktLjdsNy4wNS00LjExYy41NC41IDEuMjUuODEgMi4wNC44MSAxLjY2IDAgMy0xLjM0IDMtM3MtMS4zNC0zLTMtMy0zIDEuMzQtMyAzYzAgLjI0LjA0LjQ3LjA5LjdMOC4wNCA5LjgxQzcuNSA5LjMxIDYuNzkgOSA2IDljLTEuNjYgMC0zIDEuMzQtMyAzczEuMzQgMyAzIDNjLjc5IDAgMS41LS4zMSAyLjA0LS44MWw3LjEyIDQuMTZjLS4wNS4yMS0uMDguNDMtLjA4LjY1IDAgMS42MSAxLjMxIDIuOTIgMi45MiAyLjkyIDEuNjEgMCAyLjkyLTEuMzEgMi45Mi0yLjkyIDAtMS42MS0xLjMxLTIuOTItMi45Mi0yLjkyeiIvPgogICAgPGZpbHRlciBpZD0iYSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMTkwLjQlIiB4PSItNTAlIiB5PSItNDUuMiUiIGZpbHRlclVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+CiAgICAgIDxmZU9mZnNldCBpbj0iU291cmNlQWxwaGEiIHJlc3VsdD0ic2hhZG93T2Zmc2V0T3V0ZXIxIi8+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBpbj0ic2hhZG93T2Zmc2V0T3V0ZXIxIiByZXN1bHQ9InNoYWRvd0JsdXJPdXRlcjEiIHN0ZERldmlhdGlvbj0iMyIvPgogICAgICA8ZmVDb2xvck1hdHJpeCBpbj0ic2hhZG93Qmx1ck91dGVyMSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjUgMCIvPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8cGF0aCBkPSJNMyA0aDI0djI0SDN6Ii8+CiAgICA8ZyBmaWxsLXJ1bGU9Im5vbnplcm8iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgNCkiPgogICAgICA8dXNlIGZpbGw9IiMwMDAiIGZpbHRlcj0idXJsKCNhKSIgeGxpbms6aHJlZj0iI2IiLz4KICAgICAgPHVzZSBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHhsaW5rOmhyZWY9IiNiIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" /></li>
+                    </ul>
+                  </div>
+                  <div class="styles__Div_TranscriptContainer-s15uts9k-6 hNFJoD">
+                    <div class="styles__Div_TranscriptWrapperOuter-s37px9k-0 aWddJ">
+                      <div class="styles__Div_TranscriptWrapperInner-s37px9k-1 jOLCbO">
+                        <p class="styles__P_Transcript-s37px9k-2 kUMVSP">Boys are dumb.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="styles__Div_FeedSection-s2s72tg-0 cRserb">
+            <div class="styles__Div_HeadingContainer-s2s72tg-1 gLcgdH">
+              <h5 class="styles__H5_Heading5-s11g8p9p-4 kVsnpk">People</h5>
+            </div>
+            <div class="styles__Div_FeedSectionItemsContainer-s2s72tg-2 jdgCvv">
+              <div class="styles__Div_PersonItemContainer-kqgb9e-1 dFlaDR">
+                <div class="styles__Div_PersonItem-s1ay0n56-0 dhpskM"><a href="/person/alex-george-7nWgj9dln9fP">
+                    <div>
+                      <div class="styles__Div_PictureWrapper-s1ay0n56-1 ntCnC"><img class="styles__Img_Picture-s1ay0n56-2 eyjhel" /></div>
+                      <div class="styles__Div_PersonNameWrapper-s1ay0n56-3 gLcfbe"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Alex
+                          George</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_PersonItemContainer-kqgb9e-1 dFlaDR">
+                <div class="styles__Div_PersonItem-s1ay0n56-0 dhpskM"><a href="/person/georgia-steel-HteVj7tQijUT">
+                    <div>
+                      <div class="styles__Div_PictureWrapper-s1ay0n56-1 ntCnC"><img class="styles__Img_Picture-s1ay0n56-2 eyjhel" /></div>
+                      <div class="styles__Div_PersonNameWrapper-s1ay0n56-3 gLcfbe"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Georgia
+                          Steel</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_PersonItemContainer-kqgb9e-1 dFlaDR">
+                <div class="styles__Div_PersonItem-s1ay0n56-0 dhpskM"><a href="/person/paris-hilton-pxeqR4Yuug4K">
+                    <div>
+                      <div class="styles__Div_PictureWrapper-s1ay0n56-1 ntCnC"><img class="styles__Img_Picture-s1ay0n56-2 eyjhel"
+                          src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/person/picture/bf69b013-e833-4d61-aa08-c4e186a3f40e.jpg" /></div>
+                      <div class="styles__Div_PersonNameWrapper-s1ay0n56-3 gLcfbe"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Paris
+                          Hilton</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_PersonItemContainer-kqgb9e-1 dFlaDR">
+                <div class="styles__Div_PersonItem-s1ay0n56-0 dhpskM"><a href="/person/c-andrew-nelson-aUCk2CMZXoRD">
+                    <div>
+                      <div class="styles__Div_PictureWrapper-s1ay0n56-1 ntCnC"><img class="styles__Img_Picture-s1ay0n56-2 eyjhel"
+                          src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/person/picture/e9b95983-39c5-4ca8-ae8f-1c54bf4a3383.jpg" /></div>
+                      <div class="styles__Div_PersonNameWrapper-s1ay0n56-3 gLcfbe"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">C.
+                          Andrew Nelson</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_PersonItemContainer-kqgb9e-1 dFlaDR">
+                <div class="styles__Div_PersonItem-s1ay0n56-0 dhpskM"><a href="/person/temuera-morrison-DwE86gqLtaKJ">
+                    <div>
+                      <div class="styles__Div_PictureWrapper-s1ay0n56-1 ntCnC"><img class="styles__Img_Picture-s1ay0n56-2 eyjhel"
+                          src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/person/picture/26f5e6ee-ce03-462d-b043-27a6c805b335.jpg" /></div>
+                      <div class="styles__Div_PersonNameWrapper-s1ay0n56-3 gLcfbe"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Temuera
+                          Morrison</label></div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="styles__Div_PersonItemContainer-kqgb9e-1 dFlaDR">
+                <div class="styles__Div_PersonItem-s1ay0n56-0 dhpskM"><a href="/person/harrison-ford-r77kXKme30dV">
+                    <div>
+                      <div class="styles__Div_PictureWrapper-s1ay0n56-1 ntCnC"><img class="styles__Img_Picture-s1ay0n56-2 eyjhel"
+                          src="https://d2g55epy2n6zcw.cloudfront.net/entertainment/person/picture/cb3ecefa-1cff-4167-93f8-335e9b4d24da.jpg" /></div>
+                      <div class="styles__Div_PersonNameWrapper-s1ay0n56-3 gLcfbe"><label class="styles__Label_Label-s11g8p9p-5 gZweKs">Harrison
+                          Ford</label></div>
+                    </div>
+                  </a></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class='row third'>
-        <div class='col-xs-12'>
-          <p>&copy; Invisalign.com 2018</p>
+      <div class="styles__Div_Root-s1bynsm4-0 bsqPLK">
+        <h1 class="styles__H1_Title-s1bynsm4-1 exGCjj">The Quotable Internet. In your pocket.</h1>
+        <div class="styles__Div_CTAs-s1bynsm4-4 fXXzKf">
+          <div class="styles__Div_CTA-s1bynsm4-5 dOujMF"><a class="styles__A_CTARoot-k8he91-0 goUylv" href="https://itunes.apple.com/app/dubsmash/id918820076?at=1l3v5gN&amp;ct=dubsmash"
+              target="_blank"><img class="styles__Img_Icon-s1hmoqwc-0 cWjZAd" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTTI1LjA4IDkuODVjLTIuMjcgMS42LTMuNCAzLjU0LTMuNCA1LjggMCAyLjcgMS40IDQuNzggNC4yIDYuMjNhMTYuNzggMTYuNzggMCAwIDEtMy4yNyA1LjdDMjEuMTggMjkuMTkgMTkuODggMzAgMTguNyAzMGMtLjU2IDAtMS4zMi0uMTgtMi4yOC0uNTVsLS40Ni0uMThhNy4wMiA3LjAyIDAgMCAwLTIuNS0uNTVjLS42OCAwLTEuNDMuMTUtMi4yNS40M2wtLjU4LjIxLS43My4zYTQuNjkgNC42OSAwIDAgMS0xLjc0LjM0Yy0xLjM3IDAtMi45LTEuMTQtNC41Ni0zLjRDMS4yIDIzLjMzIDAgMTkuOCAwIDE1Ljk1YzAtMi43My43NS00LjkyIDIuMjUtNi41OWE3LjYxIDcuNjEgMCAwIDEgNS45NS0yLjVjLjkyIDAgMS43OC4xNyAyLjU4LjVsLjU1LjIzLjU4LjI0Yy41Mi4yMi45NC4zMyAxLjI1LjMzLjQxIDAgLjg2LS4xIDEuMzYtLjI5bC43NS0uMy41Ny0uMmMuOS0uMzMgMS45LS41IDIuOTktLjVhNy42IDcuNiAwIDAgMSA2LjI1IDIuOTd2LjAxek0xOC45NSAwYTYuMyA2LjMgMCAwIDEtMS44MyA1LjMyIDUuODggNS44OCAwIDAgMS00LjM2IDEuOTQgNy40NyA3LjQ3IDAgMCAxLS4wNy0uODNjMC0xLjQ2LjU4LTIuODMgMS43NC00LjExQTYuNjMgNi42MyAwIDAgMSAxOC45NSAweiIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyKSI+CiAgICAgICAgPG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNhIi8+CiAgICAgICAgPC9tYXNrPgogICAgICAgIDx1c2UgZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJub256ZXJvIiB4bGluazpocmVmPSIjYSIvPgogICAgICAgIDxnIGZpbGw9IiNmZmYiIG1hc2s9InVybCgjYikiPgogICAgICAgICAgICA8cGF0aCBkPSJNLTg3LTc1aDIwMHYyMDBILTg3eiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                style="margin-top:-3px" />Get the iOS app</a></div>
+          <div class="styles__Div_CTA-s1bynsm4-5 dOujMF"><a class="styles__A_CTARoot-k8he91-0 goUylv" href="https://play.google.com/store/apps/details?id=com.mobilemotion.dubsmash"
+              target="_blank"><img class="styles__Img_Icon-s1hmoqwc-0 cWjZAd" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYSIgZD0iTS4yMi44OEwxNC4zNCAxNSAuMjIgMjkuMTJhMi41MyAyLjUzIDAgMCAxLS4xLS43VjEuNThjMC0uMjYuMDQtLjUuMS0uN3ptMjUuNzUgMTIuOWMuNjEuMzUuOTYuOC45NiAxLjIyIDAgLjQzLS4zNS44OC0uOTYgMS4yM2wtNS41NCAzLjE0TDE2LjA2IDE1bDQuMzctNC4zNyA1LjU0IDMuMTV6bS0yNC45IDE2LjJMMTUuMiAxNS44NyAxOS4zNCAyMCAyLjMgMjkuNjdjLS40Ni4yNi0uODguMzYtMS4yMy4zMnYtLjAxem0xOC4yNy0xOS45N2wtNC4xNCA0LjEzTDEuMDcuMDFBMiAyIDAgMCAxIDIuMy4zM2wxNy4wNCA5LjY4eiIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyKSI+CiAgICAgICAgPG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNhIi8+CiAgICAgICAgPC9tYXNrPgogICAgICAgIDx1c2UgZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJub256ZXJvIiB4bGluazpocmVmPSIjYSIvPgogICAgICAgIDxnIGZpbGw9IiNmZmYiIG1hc2s9InVybCgjYikiPgogICAgICAgICAgICA8cGF0aCBkPSJNLTg1LTczaDIwMHYyMDBILTg1eiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                style="margin-top:-2px" />Get the Android app</a></div>
         </div>
+      </div>
+      <div class="styles__Div_Footer-s19bt9v3-0 bhMuKo">
+        <div class="styles__Div_MainLinks-s19bt9v3-1 facJSx">
+          <ul class="styles__UL_Links-s19bt9v3-2 iIwqSR">
+            <li class="styles__LI_Link-s19bt9v3-3 qVciZ"><a class="styles__A_MainLink-s19bt9v3-4 hDYzMK" href="https://dubsmash.com/jobs">Jobs</a></li>
+            <li class="styles__LI_Link-s19bt9v3-3 qVciZ"><a class="styles__A_MainLink-s19bt9v3-4 hDYzMK" href="https://dubsmash.com/partner">Partners</a></li>
+            <li class="styles__LI_Link-s19bt9v3-3 qVciZ"><a class="styles__A_MainLink-s19bt9v3-4 hDYzMK" href="https://dubsmash.com/press">Press</a></li>
+          </ul>
+        </div>
+        <div class="styles__P_Copyright-s19bt9v3-6 ccdYcQ">© 2018 Quotes by Dubsmash, Inc. All rights reserved.</div>
+        <ul class="styles__UL_Links-s19bt9v3-2 iIwqSR">
+          <li class="styles__LI_Link-s19bt9v3-3 qVciZ"><a class="styles__A_SecondaryLink-s19bt9v3-5 gtDdaD" href="https://dubsmash.com/terms">Terms
+              &amp; Conditions</a></li>
+          <li class="styles__LI_Link-s19bt9v3-3 qVciZ"><a class="styles__A_SecondaryLink-s19bt9v3-5 gtDdaD" href="https://dubsmash.com/privacy">Privacy
+              Policy</a></li>
+          <li class="styles__LI_Link-s19bt9v3-3 qVciZ"><a class="styles__A_SecondaryLink-s19bt9v3-5 gtDdaD" href="https://dubsmash.com/imprint">Imprint</a></li>
+        </ul>
       </div>
     </div>
   </div>
+  <div id="__next-error"></div>
   <script>
-    window.time_out = "20"
+    __NEXT_DATA__ = { "props": { "pageProps": { "serverState": { "apollo": { "data": { "002e082c1b9d4fb3981b3581cc82c656": { "__typename": "FeedSection", "uuid": "002e082c1b9d4fb3981b3581cc82c656", "content_identifier": "TRENDING_QUOTES", "title": "Trending", "items": { "type": "id", "generated": true, "id": "$002e082c1b9d4fb3981b3581cc82c656.items", "typename": "FeedSectionItemPage" } }, "ff4a860a1472427f86e949b752485112": { "__typename": "Quote", "quote": "I got some fresh meat lined up and I'm not gonna let you spoil it not this time.", "uuid": "ff4a860a1472427f86e949b752485112", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/childs-play-3-i-got-some-fresh-meat-lined-up-and-im-not-gonna-9Mj6vpZ4zR47", "language": { "type": "id", "generated": true, "id": "$ff4a860a1472427f86e949b752485112.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$ff4a860a1472427f86e949b752485112.creator", "typename": "User" }, "movie": { "type": "id", "generated": false, "id": "d54b939a29bb47378616d718f14a4586", "typename": "Movie" }, "videos": { "type": "id", "generated": true, "id": "$ff4a860a1472427f86e949b752485112.videos", "typename": "QuoteVideoData" }, "length": 4.68 }, "$ff4a860a1472427f86e949b752485112.language": { "name": "English", "__typename": "Language" }, "$ff4a860a1472427f86e949b752485112.creator": { "username": "chris.gogo.ql", "__typename": "User" }, "d54b939a29bb47378616d718f14a4586": { "root_uuid": "d54b939a29bb47378616d718f14a4586", "root_title": "Child's Play 3", "episode_number": null, "season_number": null, "share_link": "https://quotes.dubsmash.com/movie/childs-play-3-suv13SsGps47", "title": "Child's Play 3", "uuid": "d54b939a29bb47378616d718f14a4586", "__typename": "Movie" }, "$ff4a860a1472427f86e949b752485112.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/9aa7f94e-5ea4-438f-a1b3-74741db3a14f.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/f436692c-6ce2-4279-a744-049c076a8152.jpeg", "__typename": "QuoteVideo" }, "$ff4a860a1472427f86e949b752485112.videos": { "mobile": { "type": "id", "generated": true, "id": "$ff4a860a1472427f86e949b752485112.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$ff4a860a1472427f86e949b752485112.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$ff4a860a1472427f86e949b752485112.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/9aa7f94e-5ea4-438f-a1b3-74741db3a14f.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/f436692c-6ce2-4279-a744-049c076a8152.jpeg", "__typename": "QuoteVideo" }, "78316c93230a43878ab1bf092675c817": { "__typename": "Quote", "quote": "I'm showing my after-pregnancy body like, what's good?", "uuid": "78316c93230a43878ab1bf092675c817", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/e-news-im-showing-my-after-pregnancy-body-like-whats-6wefcXKjXO0x", "language": { "type": "id", "generated": true, "id": "$78316c93230a43878ab1bf092675c817.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$78316c93230a43878ab1bf092675c817.creator", "typename": "User" }, "movie": { "type": "id", "generated": false, "id": "3b25b2ee00574b048b5a8e37f0d9dd0e", "typename": "Movie" }, "videos": { "type": "id", "generated": true, "id": "$78316c93230a43878ab1bf092675c817.videos", "typename": "QuoteVideoData" }, "length": 3.76 }, "$78316c93230a43878ab1bf092675c817.language": { "name": "English", "__typename": "Language" }, "$78316c93230a43878ab1bf092675c817.creator": { "username": "jian.santos.ql", "__typename": "User" }, "3b25b2ee00574b048b5a8e37f0d9dd0e": { "root_uuid": "3b25b2ee00574b048b5a8e37f0d9dd0e", "root_title": "E! News", "episode_number": null, "season_number": null, "share_link": "https://quotes.dubsmash.com/show/e-news-kZ4zMiJ8EQxM", "title": "E! News", "uuid": "3b25b2ee00574b048b5a8e37f0d9dd0e", "__typename": "Movie" }, "$78316c93230a43878ab1bf092675c817.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/46e07a81-e971-4484-a1d5-26227fe120c2.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/0c4e53b3-c8ca-4007-b55d-32d0c9335b40.jpeg", "__typename": "QuoteVideo" }, "$78316c93230a43878ab1bf092675c817.videos": { "mobile": { "type": "id", "generated": true, "id": "$78316c93230a43878ab1bf092675c817.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$78316c93230a43878ab1bf092675c817.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$78316c93230a43878ab1bf092675c817.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/46e07a81-e971-4484-a1d5-26227fe120c2.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/0c4e53b3-c8ca-4007-b55d-32d0c9335b40.jpeg", "__typename": "QuoteVideo" }, "250fe3cb6e344def8cb0c92517695dc9": { "__typename": "Quote", "quote": "I gotta couple of more weeks to go for my goal body but, I'm not gonna hide out here, you heard?", "uuid": "250fe3cb6e344def8cb0c92517695dc9", "quote_type": "INTERNET", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/i-gotta-couple-of-more-weeks-to-go-for-my-goal-CgeHDJ09OJDy", "language": { "type": "id", "generated": true, "id": "$250fe3cb6e344def8cb0c92517695dc9.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$250fe3cb6e344def8cb0c92517695dc9.creator", "typename": "User" }, "movie": null, "videos": { "type": "id", "generated": true, "id": "$250fe3cb6e344def8cb0c92517695dc9.videos", "typename": "QuoteVideoData" }, "length": 6.66 }, "$250fe3cb6e344def8cb0c92517695dc9.language": { "name": "English", "__typename": "Language" }, "$250fe3cb6e344def8cb0c92517695dc9.creator": { "username": "atamay.carballo.ql", "__typename": "User" }, "$250fe3cb6e344def8cb0c92517695dc9.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/3d86b9bd-cf41-40d5-81c6-7dc6b7fdedc4.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/9d9817ff-4880-43ac-86ed-20edd71e7513.jpeg", "__typename": "QuoteVideo" }, "$250fe3cb6e344def8cb0c92517695dc9.videos": { "mobile": { "type": "id", "generated": true, "id": "$250fe3cb6e344def8cb0c92517695dc9.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$250fe3cb6e344def8cb0c92517695dc9.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$250fe3cb6e344def8cb0c92517695dc9.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/3d86b9bd-cf41-40d5-81c6-7dc6b7fdedc4.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/9d9817ff-4880-43ac-86ed-20edd71e7513.jpeg", "__typename": "QuoteVideo" }, "a7e4815aed994d89b9082df314b9b4a1": { "__typename": "Quote", "quote": "Game 1 on how to f*** with a guy's head: You stop at a sex store.", "uuid": "a7e4815aed994d89b9082df314b9b4a1", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/shahs-of-sunset-game-1-on-how-to-fuck-with-a-guys-head-you-stop-lm7ZjF9wY9au", "language": { "type": "id", "generated": true, "id": "$a7e4815aed994d89b9082df314b9b4a1.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$a7e4815aed994d89b9082df314b9b4a1.creator", "typename": "User" }, "movie": { "type": "id", "generated": false, "id": "85d37ca9b727492297802589b99e1eed", "typename": "Movie" }, "videos": { "type": "id", "generated": true, "id": "$a7e4815aed994d89b9082df314b9b4a1.videos", "typename": "QuoteVideoData" }, "length": 4.16 }, "$a7e4815aed994d89b9082df314b9b4a1.language": { "name": "English", "__typename": "Language" }, "$a7e4815aed994d89b9082df314b9b4a1.creator": { "username": "atamay.carballo.ql", "__typename": "User" }, "85d37ca9b727492297802589b99e1eed": { "root_uuid": "85d37ca9b727492297802589b99e1eed", "root_title": "Shahs of Sunset", "episode_number": null, "season_number": null, "share_link": "https://quotes.dubsmash.com/show/shahs-of-sunset-1u1WwVUUBmKJ", "title": "Shahs of Sunset", "uuid": "85d37ca9b727492297802589b99e1eed", "__typename": "Movie" }, "$a7e4815aed994d89b9082df314b9b4a1.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/c8c92b7a-50de-4ed9-9207-e4bc67631960.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/05380385-d60c-4ad6-b3c6-936647bb4594.jpeg", "__typename": "QuoteVideo" }, "$a7e4815aed994d89b9082df314b9b4a1.videos": { "mobile": { "type": "id", "generated": true, "id": "$a7e4815aed994d89b9082df314b9b4a1.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$a7e4815aed994d89b9082df314b9b4a1.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$a7e4815aed994d89b9082df314b9b4a1.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/c8c92b7a-50de-4ed9-9207-e4bc67631960.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/05380385-d60c-4ad6-b3c6-936647bb4594.jpeg", "__typename": "QuoteVideo" }, "a0828563b5174c69861414622c0a4c92": { "__typename": "Quote", "quote": "It's good to make you excited.", "uuid": "a0828563b5174c69861414622c0a4c92", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/love-island-its-good-to-make-you-TLWuRgHjaixr", "language": { "type": "id", "generated": true, "id": "$a0828563b5174c69861414622c0a4c92.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$a0828563b5174c69861414622c0a4c92.creator", "typename": "User" }, "movie": { "type": "id", "generated": false, "id": "fddb55ebf97d4b66aa5870e6e165a2c7", "typename": "Movie" }, "videos": { "type": "id", "generated": true, "id": "$a0828563b5174c69861414622c0a4c92.videos", "typename": "QuoteVideoData" }, "length": 4.12 }, "$a0828563b5174c69861414622c0a4c92.language": { "name": "English", "__typename": "Language" }, "$a0828563b5174c69861414622c0a4c92.creator": { "username": "dan.errege7", "__typename": "User" }, "fddb55ebf97d4b66aa5870e6e165a2c7": { "root_uuid": "fddb55ebf97d4b66aa5870e6e165a2c7", "root_title": "Love Island", "episode_number": null, "season_number": null, "share_link": "https://quotes.dubsmash.com/show/love-island-cJ4GeTgYN2WZ", "title": "Love Island", "uuid": "fddb55ebf97d4b66aa5870e6e165a2c7", "__typename": "Movie", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/9bfbfe1e-1ac8-49c0-bc1e-3c0c546b7b5c.jpg" }, "$a0828563b5174c69861414622c0a4c92.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/d013d533-9319-45af-bcd9-0fe7b24d8e6c.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/b6310767-4152-4bc5-8cfe-f9b58529295b.jpeg", "__typename": "QuoteVideo" }, "$a0828563b5174c69861414622c0a4c92.videos": { "mobile": { "type": "id", "generated": true, "id": "$a0828563b5174c69861414622c0a4c92.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$a0828563b5174c69861414622c0a4c92.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$a0828563b5174c69861414622c0a4c92.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/d013d533-9319-45af-bcd9-0fe7b24d8e6c.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/b6310767-4152-4bc5-8cfe-f9b58529295b.jpeg", "__typename": "QuoteVideo" }, "5aa93f826788465e89bc4ee40f1d2d28": { "__typename": "Quote", "quote": "What if I use this energy to defeat Cancer?", "uuid": "5aa93f826788465e89bc4ee40f1d2d28", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/what-if-i-use-this-energy-to-defeat-YZd4slq9jEaL", "language": { "type": "id", "generated": true, "id": "$5aa93f826788465e89bc4ee40f1d2d28.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$5aa93f826788465e89bc4ee40f1d2d28.creator", "typename": "User" }, "movie": null, "videos": { "type": "id", "generated": true, "id": "$5aa93f826788465e89bc4ee40f1d2d28.videos", "typename": "QuoteVideoData" }, "length": 4.55 }, "$5aa93f826788465e89bc4ee40f1d2d28.language": { "name": "English", "__typename": "Language" }, "$5aa93f826788465e89bc4ee40f1d2d28.creator": { "username": "atamay.carballo.ql", "__typename": "User" }, "$5aa93f826788465e89bc4ee40f1d2d28.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/ddadeffa-70b5-45da-837e-c46c7cb74334.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/b82d82a2-aba8-41a7-afe9-a4241e39fec1.jpeg", "__typename": "QuoteVideo" }, "$5aa93f826788465e89bc4ee40f1d2d28.videos": { "mobile": { "type": "id", "generated": true, "id": "$5aa93f826788465e89bc4ee40f1d2d28.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$5aa93f826788465e89bc4ee40f1d2d28.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$5aa93f826788465e89bc4ee40f1d2d28.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/ddadeffa-70b5-45da-837e-c46c7cb74334.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/b82d82a2-aba8-41a7-afe9-a4241e39fec1.jpeg", "__typename": "QuoteVideo" }, "$002e082c1b9d4fb3981b3581cc82c656.items": { "results": [{ "type": "id", "generated": false, "id": "ff4a860a1472427f86e949b752485112", "typename": "Quote" }, { "type": "id", "generated": false, "id": "78316c93230a43878ab1bf092675c817", "typename": "Quote" }, { "type": "id", "generated": false, "id": "250fe3cb6e344def8cb0c92517695dc9", "typename": "Quote" }, { "type": "id", "generated": false, "id": "a7e4815aed994d89b9082df314b9b4a1", "typename": "Quote" }, { "type": "id", "generated": false, "id": "a0828563b5174c69861414622c0a4c92", "typename": "Quote" }, { "type": "id", "generated": false, "id": "5aa93f826788465e89bc4ee40f1d2d28", "typename": "Quote" }], "__typename": "FeedSectionItemPage" }, "$ROOT_QUERY.explore({\"offset\":0}).results.0": { "data": { "type": "id", "generated": false, "id": "002e082c1b9d4fb3981b3581cc82c656", "typename": "FeedSection" }, "__typename": "ExploreFeedItem" }, "66156457c831431dacd214806ce4c12c": { "__typename": "FeedSection", "uuid": "66156457c831431dacd214806ce4c12c", "content_identifier": "RECENTLY_UPDATED_MOVIES", "title": "Movies", "items": { "type": "id", "generated": true, "id": "$66156457c831431dacd214806ce4c12c.items", "typename": "FeedSectionItemPage" } }, "d2c9804ba06846ce8411fd13b02666a9": { "__typename": "Movie", "root_uuid": "d2c9804ba06846ce8411fd13b02666a9", "root_title": "Jurassic Park", "uuid": "d2c9804ba06846ce8411fd13b02666a9", "share_link": "https://quotes.dubsmash.com/movie/jurassic-park-aESjNYxrr8hy", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/826c80f6-0c10-4fe0-b326-fb42158a0c34.jpg", "episode_number": null, "season_number": null, "title": "Jurassic Park" }, "fb10e813136e4f85bee4a01f4ecd3032": { "__typename": "Movie", "root_uuid": "fb10e813136e4f85bee4a01f4ecd3032", "root_title": "Fargo", "uuid": "fb10e813136e4f85bee4a01f4ecd3032", "share_link": "https://quotes.dubsmash.com/movie/fargo-YPzUujqmidVR", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/111e1c02-a052-445a-bbc8-b50fa906b06d.jpg", "episode_number": null, "season_number": null, "title": "Fargo" }, "96915010a9cc4b618897a8d9a235545e": { "__typename": "Movie", "root_uuid": "96915010a9cc4b618897a8d9a235545e", "root_title": "Star Wars: Episode V - The Empire Strikes Back", "uuid": "96915010a9cc4b618897a8d9a235545e", "share_link": "https://quotes.dubsmash.com/movie/star-wars-episode-v-the-empire-strikes-back-QEmBVy1Tbzsr", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/b81bfb52-dc89-4ae2-9ed7-703316f83d51.jpg", "episode_number": null, "season_number": null, "title": "Star Wars: Episode V - The Empire Strikes Back" }, "90d13fb5d81b408bbc2086fa847b084b": { "__typename": "Movie", "root_uuid": "90d13fb5d81b408bbc2086fa847b084b", "root_title": "Office Space", "uuid": "90d13fb5d81b408bbc2086fa847b084b", "share_link": "https://quotes.dubsmash.com/movie/office-space-VNTAi4CWqlMw", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/18abbefc-1aea-4056-b93a-cc4a9ce51747.jpg", "episode_number": null, "season_number": null, "title": "Office Space" }, "b4c2431a6d694237b95dc823fe5c0051": { "__typename": "Movie", "root_uuid": "b4c2431a6d694237b95dc823fe5c0051", "root_title": "The Big Short", "uuid": "b4c2431a6d694237b95dc823fe5c0051", "share_link": "https://quotes.dubsmash.com/movie/the-big-short-n5wbiGZgIJ8c", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/6bae385e-e1b1-483b-afea-27bf1a3a3191.jpg", "episode_number": null, "season_number": null, "title": "The Big Short" }, "fb619a7fe74d44a7872d509ba1b205fa": { "__typename": "Movie", "root_uuid": "fb619a7fe74d44a7872d509ba1b205fa", "root_title": "Nightcrawler", "uuid": "fb619a7fe74d44a7872d509ba1b205fa", "share_link": "https://quotes.dubsmash.com/movie/nightcrawler-QYZqKIQRyjuq", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/d878ed87-353a-4c6f-8457-cdfe606c7e14.jpg", "episode_number": null, "season_number": null, "title": "Nightcrawler" }, "$66156457c831431dacd214806ce4c12c.items": { "results": [{ "type": "id", "generated": false, "id": "d2c9804ba06846ce8411fd13b02666a9", "typename": "Movie" }, { "type": "id", "generated": false, "id": "fb10e813136e4f85bee4a01f4ecd3032", "typename": "Movie" }, { "type": "id", "generated": false, "id": "96915010a9cc4b618897a8d9a235545e", "typename": "Movie" }, { "type": "id", "generated": false, "id": "90d13fb5d81b408bbc2086fa847b084b", "typename": "Movie" }, { "type": "id", "generated": false, "id": "b4c2431a6d694237b95dc823fe5c0051", "typename": "Movie" }, { "type": "id", "generated": false, "id": "fb619a7fe74d44a7872d509ba1b205fa", "typename": "Movie" }], "__typename": "FeedSectionItemPage" }, "$ROOT_QUERY.explore({\"offset\":0}).results.1": { "data": { "type": "id", "generated": false, "id": "66156457c831431dacd214806ce4c12c", "typename": "FeedSection" }, "__typename": "ExploreFeedItem" }, "b3d08eb0f5ba4592beecc744faf3ade8": { "__typename": "FeedSection", "uuid": "b3d08eb0f5ba4592beecc744faf3ade8", "content_identifier": "RECENTLY_UPDATED_SHOWS", "title": "Shows", "items": { "type": "id", "generated": true, "id": "$b3d08eb0f5ba4592beecc744faf3ade8.items", "typename": "FeedSectionItemPage" } }, "c07ab9366cf3478ea29b9e1fb702acea": { "__typename": "Movie", "root_uuid": "c07ab9366cf3478ea29b9e1fb702acea", "root_title": "RuPaul's Drag Race", "uuid": "c07ab9366cf3478ea29b9e1fb702acea", "share_link": "https://quotes.dubsmash.com/show/rupauls-drag-race-oQuxGa4xqDgd", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/cc515d56-af43-4def-95ba-11ec918a5aa6.jpg", "episode_number": null, "season_number": null, "title": "RuPaul's Drag Race" }, "27724100d287441f8c76edf721f6b40c": { "__typename": "Movie", "root_uuid": "27724100d287441f8c76edf721f6b40c", "root_title": "The Simple Life", "uuid": "27724100d287441f8c76edf721f6b40c", "share_link": "https://quotes.dubsmash.com/show/the-simple-life-AucszRhRfTBY", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/f89520cc-822a-42d6-ad9a-d1e079908f60.jpg", "episode_number": null, "season_number": null, "title": "The Simple Life" }, "254eb7bbf178462592afc2b47755d1ae": { "__typename": "Movie", "root_uuid": "254eb7bbf178462592afc2b47755d1ae", "root_title": "Dawson's Creek", "uuid": "254eb7bbf178462592afc2b47755d1ae", "share_link": "https://quotes.dubsmash.com/show/dawsons-creek-2YwCBf3MeyZs", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/ba4ea477-af70-478d-aa4b-ce6c6be35940.jpg", "episode_number": null, "season_number": null, "title": "Dawson's Creek" }, "cdb2e8b60397407f852db8838d64824c": { "__typename": "Movie", "root_uuid": "cdb2e8b60397407f852db8838d64824c", "root_title": "Ishq Subhan Allah", "uuid": "cdb2e8b60397407f852db8838d64824c", "share_link": "https://quotes.dubsmash.com/show/ishq-subhan-allah-4WJYh0lAwXwE", "poster": null, "episode_number": null, "season_number": null, "title": "Ishq Subhan Allah" }, "f6e144533cb34ba99ef016836a8bd0e2": { "__typename": "Movie", "root_uuid": "f6e144533cb34ba99ef016836a8bd0e2", "root_title": "Saturday Night Live", "uuid": "f6e144533cb34ba99ef016836a8bd0e2", "share_link": "https://quotes.dubsmash.com/show/saturday-night-live-GsDxEljj6ZSJ", "poster": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/movie/poster/0fb49244-9157-42b2-a456-e791fde11471.jpg", "episode_number": null, "season_number": null, "title": "Saturday Night Live" }, "$b3d08eb0f5ba4592beecc744faf3ade8.items": { "results": [{ "type": "id", "generated": false, "id": "fddb55ebf97d4b66aa5870e6e165a2c7", "typename": "Movie" }, { "type": "id", "generated": false, "id": "c07ab9366cf3478ea29b9e1fb702acea", "typename": "Movie" }, { "type": "id", "generated": false, "id": "27724100d287441f8c76edf721f6b40c", "typename": "Movie" }, { "type": "id", "generated": false, "id": "254eb7bbf178462592afc2b47755d1ae", "typename": "Movie" }, { "type": "id", "generated": false, "id": "cdb2e8b60397407f852db8838d64824c", "typename": "Movie" }, { "type": "id", "generated": false, "id": "f6e144533cb34ba99ef016836a8bd0e2", "typename": "Movie" }], "__typename": "FeedSectionItemPage" }, "$ROOT_QUERY.explore({\"offset\":0}).results.2": { "data": { "type": "id", "generated": false, "id": "b3d08eb0f5ba4592beecc744faf3ade8", "typename": "FeedSection" }, "__typename": "ExploreFeedItem" }, "b9de6ce69cee4425bc6820ee5e12e779": { "__typename": "FeedSection", "uuid": "b9de6ce69cee4425bc6820ee5e12e779", "content_identifier": "RECENTLY_ADDED_QUOTES", "title": "Recently Added", "items": { "type": "id", "generated": true, "id": "$b9de6ce69cee4425bc6820ee5e12e779.items", "typename": "FeedSectionItemPage" } }, "fcca4009f213476aa46a17810e783b5a": { "__typename": "Quote", "quote": "What do you want? A little food? Look at me. I just fell down a hill. I'm soaking wet. I don't have any food.", "uuid": "fcca4009f213476aa46a17810e783b5a", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/jurassic-park-what-do-you-want-a-little-food-look-at-me-i-just-dyo03Bz0ZPMd", "language": { "type": "id", "generated": true, "id": "$fcca4009f213476aa46a17810e783b5a.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$fcca4009f213476aa46a17810e783b5a.creator", "typename": "User" }, "movie": { "type": "id", "generated": false, "id": "d2c9804ba06846ce8411fd13b02666a9", "typename": "Movie" }, "videos": { "type": "id", "generated": true, "id": "$fcca4009f213476aa46a17810e783b5a.videos", "typename": "QuoteVideoData" }, "length": 5.32 }, "$fcca4009f213476aa46a17810e783b5a.language": { "name": "English", "__typename": "Language" }, "$fcca4009f213476aa46a17810e783b5a.creator": { "username": "fay.llanera.ql", "__typename": "User" }, "$fcca4009f213476aa46a17810e783b5a.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/7c4c499c-7da1-4f4a-a145-e282b12f1f30.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/4552bfa1-4e32-439e-bd19-b31dc6c3b870.jpeg", "__typename": "QuoteVideo" }, "$fcca4009f213476aa46a17810e783b5a.videos": { "mobile": { "type": "id", "generated": true, "id": "$fcca4009f213476aa46a17810e783b5a.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$fcca4009f213476aa46a17810e783b5a.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$fcca4009f213476aa46a17810e783b5a.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/7c4c499c-7da1-4f4a-a145-e282b12f1f30.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/4552bfa1-4e32-439e-bd19-b31dc6c3b870.jpeg", "__typename": "QuoteVideo" }, "69a09c3407604f3cbcabb70aa1e74d19": { "__typename": "Quote", "quote": "It's about to go down.", "uuid": "69a09c3407604f3cbcabb70aa1e74d19", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/love-island-its-about-to-go-GdYWKr0CGOEE", "language": { "type": "id", "generated": true, "id": "$69a09c3407604f3cbcabb70aa1e74d19.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$69a09c3407604f3cbcabb70aa1e74d19.creator", "typename": "User" }, "movie": { "type": "id", "generated": false, "id": "fddb55ebf97d4b66aa5870e6e165a2c7", "typename": "Movie" }, "videos": { "type": "id", "generated": true, "id": "$69a09c3407604f3cbcabb70aa1e74d19.videos", "typename": "QuoteVideoData" }, "length": 2.16 }, "$69a09c3407604f3cbcabb70aa1e74d19.language": { "name": "English", "__typename": "Language" }, "$69a09c3407604f3cbcabb70aa1e74d19.creator": { "username": "raymond.abasta.ql", "__typename": "User" }, "$69a09c3407604f3cbcabb70aa1e74d19.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/fa838292-e7e8-4bc9-90b0-18332b99cfb2.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/41d1cfef-2398-4aa0-81b4-9630cfa060b1.jpeg", "__typename": "QuoteVideo" }, "$69a09c3407604f3cbcabb70aa1e74d19.videos": { "mobile": { "type": "id", "generated": true, "id": "$69a09c3407604f3cbcabb70aa1e74d19.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$69a09c3407604f3cbcabb70aa1e74d19.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$69a09c3407604f3cbcabb70aa1e74d19.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/fa838292-e7e8-4bc9-90b0-18332b99cfb2.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/41d1cfef-2398-4aa0-81b4-9630cfa060b1.jpeg", "__typename": "QuoteVideo" }, "5b53cb2278e544c3823ce8383637a276": { "__typename": "Quote", "quote": "Boys are dumb.", "uuid": "5b53cb2278e544c3823ce8383637a276", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/love-island-boys-are-UtC3TsNA7FV0", "language": { "type": "id", "generated": true, "id": "$5b53cb2278e544c3823ce8383637a276.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$5b53cb2278e544c3823ce8383637a276.creator", "typename": "User" }, "movie": { "type": "id", "generated": false, "id": "fddb55ebf97d4b66aa5870e6e165a2c7", "typename": "Movie" }, "videos": { "type": "id", "generated": true, "id": "$5b53cb2278e544c3823ce8383637a276.videos", "typename": "QuoteVideoData" }, "length": 0.99 }, "$5b53cb2278e544c3823ce8383637a276.language": { "name": "English", "__typename": "Language" }, "$5b53cb2278e544c3823ce8383637a276.creator": { "username": "bettina.manacop.ql", "__typename": "User" }, "$5b53cb2278e544c3823ce8383637a276.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/adbc5b33-9681-4909-9628-169775328e22.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/d300fd33-c8b2-4b6d-86a7-05ce69a90bb9.jpeg", "__typename": "QuoteVideo" }, "$5b53cb2278e544c3823ce8383637a276.videos": { "mobile": { "type": "id", "generated": true, "id": "$5b53cb2278e544c3823ce8383637a276.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$5b53cb2278e544c3823ce8383637a276.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$5b53cb2278e544c3823ce8383637a276.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/adbc5b33-9681-4909-9628-169775328e22.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/d300fd33-c8b2-4b6d-86a7-05ce69a90bb9.jpeg", "__typename": "QuoteVideo" }, "846febc63ce04ac9b37273a5f6b55438": { "__typename": "Quote", "quote": "I'm always on standby, though to mend any broken hearts.", "uuid": "846febc63ce04ac9b37273a5f6b55438", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/love-island-im-always-on-standby-though-to-mend-any-broken-HTlKBGCdJ2rn", "language": { "type": "id", "generated": true, "id": "$846febc63ce04ac9b37273a5f6b55438.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$846febc63ce04ac9b37273a5f6b55438.creator", "typename": "User" }, "movie": { "type": "id", "generated": false, "id": "fddb55ebf97d4b66aa5870e6e165a2c7", "typename": "Movie" }, "videos": { "type": "id", "generated": true, "id": "$846febc63ce04ac9b37273a5f6b55438.videos", "typename": "QuoteVideoData" }, "length": 2.61 }, "$846febc63ce04ac9b37273a5f6b55438.language": { "name": "English", "__typename": "Language" }, "$846febc63ce04ac9b37273a5f6b55438.creator": { "username": "bettina.manacop.ql", "__typename": "User" }, "$846febc63ce04ac9b37273a5f6b55438.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/ecc81c03-b833-40ba-84b9-098776242df8.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/76c527e6-138a-4a63-bc38-72d36e8d876f.jpeg", "__typename": "QuoteVideo" }, "$846febc63ce04ac9b37273a5f6b55438.videos": { "mobile": { "type": "id", "generated": true, "id": "$846febc63ce04ac9b37273a5f6b55438.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$846febc63ce04ac9b37273a5f6b55438.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$846febc63ce04ac9b37273a5f6b55438.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/ecc81c03-b833-40ba-84b9-098776242df8.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/76c527e6-138a-4a63-bc38-72d36e8d876f.jpeg", "__typename": "QuoteVideo" }, "20be7520e3e946858f447fdba385536e": { "__typename": "Quote", "quote": "It's the game. It's what you gotta do.", "uuid": "20be7520e3e946858f447fdba385536e", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/love-island-its-the-game-its-what-you-gotta-bUN78HdotoHo", "language": { "type": "id", "generated": true, "id": "$20be7520e3e946858f447fdba385536e.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$20be7520e3e946858f447fdba385536e.creator", "typename": "User" }, "movie": { "type": "id", "generated": false, "id": "fddb55ebf97d4b66aa5870e6e165a2c7", "typename": "Movie" }, "videos": { "type": "id", "generated": true, "id": "$20be7520e3e946858f447fdba385536e.videos", "typename": "QuoteVideoData" }, "length": 1.6 }, "$20be7520e3e946858f447fdba385536e.language": { "name": "English", "__typename": "Language" }, "$20be7520e3e946858f447fdba385536e.creator": { "username": "bettina.manacop.ql", "__typename": "User" }, "$20be7520e3e946858f447fdba385536e.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/0dcdf2b6-1c8d-4028-b2ce-ec27760e2d99.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/203ad141-148c-4a66-b014-be1489774e18.jpeg", "__typename": "QuoteVideo" }, "$20be7520e3e946858f447fdba385536e.videos": { "mobile": { "type": "id", "generated": true, "id": "$20be7520e3e946858f447fdba385536e.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$20be7520e3e946858f447fdba385536e.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$20be7520e3e946858f447fdba385536e.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/0dcdf2b6-1c8d-4028-b2ce-ec27760e2d99.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/203ad141-148c-4a66-b014-be1489774e18.jpeg", "__typename": "QuoteVideo" }, "d93b193b993c4e0c80d873f84a33ab7c": { "__typename": "Quote", "quote": "A girl loves a guy with brains.", "uuid": "d93b193b993c4e0c80d873f84a33ab7c", "quote_type": "ENTERTAINMENT", "favorited": false, "share_link": "https://quotes.dubsmash.com/quote/love-island-a-girl-loves-a-guy-with-bT4CZD0NAgmQ", "language": { "type": "id", "generated": true, "id": "$d93b193b993c4e0c80d873f84a33ab7c.language", "typename": "Language" }, "creator": { "type": "id", "generated": true, "id": "$d93b193b993c4e0c80d873f84a33ab7c.creator", "typename": "User" }, "movie": { "type": "id", "generated": false, "id": "fddb55ebf97d4b66aa5870e6e165a2c7", "typename": "Movie" }, "videos": { "type": "id", "generated": true, "id": "$d93b193b993c4e0c80d873f84a33ab7c.videos", "typename": "QuoteVideoData" }, "length": 2.31 }, "$d93b193b993c4e0c80d873f84a33ab7c.language": { "name": "English", "__typename": "Language" }, "$d93b193b993c4e0c80d873f84a33ab7c.creator": { "username": "bettina.manacop.ql", "__typename": "User" }, "$d93b193b993c4e0c80d873f84a33ab7c.videos.mobile": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/ef72ccaf-8836-4c75-9c6d-a2dfe1dba1c9.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/7bb03382-b30c-4f74-aeb8-af3765a188d4.jpeg", "__typename": "QuoteVideo" }, "$d93b193b993c4e0c80d873f84a33ab7c.videos": { "mobile": { "type": "id", "generated": true, "id": "$d93b193b993c4e0c80d873f84a33ab7c.videos.mobile", "typename": "QuoteVideo" }, "web": { "type": "id", "generated": true, "id": "$d93b193b993c4e0c80d873f84a33ab7c.videos.web", "typename": "QuoteVideo" }, "__typename": "QuoteVideoData" }, "$d93b193b993c4e0c80d873f84a33ab7c.videos.web": { "video": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/videos/ef72ccaf-8836-4c75-9c6d-a2dfe1dba1c9.mp4", "best_frame": "https://d2g55epy2n6zcw.cloudfront.net/quotes/quote/video_thumbnails/7bb03382-b30c-4f74-aeb8-af3765a188d4.jpeg", "__typename": "QuoteVideo" }, "$b9de6ce69cee4425bc6820ee5e12e779.items": { "results": [{ "type": "id", "generated": false, "id": "fcca4009f213476aa46a17810e783b5a", "typename": "Quote" }, { "type": "id", "generated": false, "id": "69a09c3407604f3cbcabb70aa1e74d19", "typename": "Quote" }, { "type": "id", "generated": false, "id": "5b53cb2278e544c3823ce8383637a276", "typename": "Quote" }, { "type": "id", "generated": false, "id": "846febc63ce04ac9b37273a5f6b55438", "typename": "Quote" }, { "type": "id", "generated": false, "id": "20be7520e3e946858f447fdba385536e", "typename": "Quote" }, { "type": "id", "generated": false, "id": "d93b193b993c4e0c80d873f84a33ab7c", "typename": "Quote" }], "__typename": "FeedSectionItemPage" }, "$ROOT_QUERY.explore({\"offset\":0}).results.3": { "data": { "type": "id", "generated": false, "id": "b9de6ce69cee4425bc6820ee5e12e779", "typename": "FeedSection" }, "__typename": "ExploreFeedItem" }, "d376142517094788bda43bea0ca95e94": { "__typename": "FeedSection", "uuid": "d376142517094788bda43bea0ca95e94", "content_identifier": "RECOMMENDED_QUOTES", "title": "For you", "items": { "type": "id", "generated": true, "id": "$d376142517094788bda43bea0ca95e94.items", "typename": "FeedSectionItemPage" } }, "$d376142517094788bda43bea0ca95e94.items": { "results": [], "__typename": "FeedSectionItemPage" }, "$ROOT_QUERY.explore({\"offset\":0}).results.4": { "data": { "type": "id", "generated": false, "id": "d376142517094788bda43bea0ca95e94", "typename": "FeedSection" }, "__typename": "ExploreFeedItem" }, "51b12c654eca4f37b565cff14f028256": { "__typename": "FeedSection", "uuid": "51b12c654eca4f37b565cff14f028256", "content_identifier": "RECENTLY_UPDATED_PERSONS", "title": "People", "items": { "type": "id", "generated": true, "id": "$51b12c654eca4f37b565cff14f028256.items", "typename": "FeedSectionItemPage" } }, "0c0ba7d75b6d4d07a304ea77ade5c044": { "__typename": "Person", "uuid": "0c0ba7d75b6d4d07a304ea77ade5c044", "name": "Alex George", "share_link": "https://quotes.dubsmash.com/person/alex-george-7nWgj9dln9fP", "picture": null }, "7c55709c598b48a3a02623809cddbbcf": { "__typename": "Person", "uuid": "7c55709c598b48a3a02623809cddbbcf", "name": "Georgia Steel", "share_link": "https://quotes.dubsmash.com/person/georgia-steel-HteVj7tQijUT", "picture": null }, "24713dc9d07048549aa405feaab57468": { "__typename": "Person", "uuid": "24713dc9d07048549aa405feaab57468", "name": "Paris Hilton", "share_link": "https://quotes.dubsmash.com/person/paris-hilton-pxeqR4Yuug4K", "picture": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/person/picture/bf69b013-e833-4d61-aa08-c4e186a3f40e.jpg" }, "c0a0994fb4ba4216bbc38560827f5d71": { "__typename": "Person", "uuid": "c0a0994fb4ba4216bbc38560827f5d71", "name": "C. Andrew Nelson", "share_link": "https://quotes.dubsmash.com/person/c-andrew-nelson-aUCk2CMZXoRD", "picture": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/person/picture/e9b95983-39c5-4ca8-ae8f-1c54bf4a3383.jpg" }, "d82539fcac3f4e838ecdb4ed63053ed3": { "__typename": "Person", "uuid": "d82539fcac3f4e838ecdb4ed63053ed3", "name": "Temuera Morrison", "share_link": "https://quotes.dubsmash.com/person/temuera-morrison-DwE86gqLtaKJ", "picture": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/person/picture/26f5e6ee-ce03-462d-b043-27a6c805b335.jpg" }, "67b2231d67ce4f7da1b13c14c538c87b": { "__typename": "Person", "uuid": "67b2231d67ce4f7da1b13c14c538c87b", "name": "Harrison Ford", "share_link": "https://quotes.dubsmash.com/person/harrison-ford-r77kXKme30dV", "picture": "https://d2g55epy2n6zcw.cloudfront.net/entertainment/person/picture/cb3ecefa-1cff-4167-93f8-335e9b4d24da.jpg" }, "$51b12c654eca4f37b565cff14f028256.items": { "results": [{ "type": "id", "generated": false, "id": "0c0ba7d75b6d4d07a304ea77ade5c044", "typename": "Person" }, { "type": "id", "generated": false, "id": "7c55709c598b48a3a02623809cddbbcf", "typename": "Person" }, { "type": "id", "generated": false, "id": "24713dc9d07048549aa405feaab57468", "typename": "Person" }, { "type": "id", "generated": false, "id": "c0a0994fb4ba4216bbc38560827f5d71", "typename": "Person" }, { "type": "id", "generated": false, "id": "d82539fcac3f4e838ecdb4ed63053ed3", "typename": "Person" }, { "type": "id", "generated": false, "id": "67b2231d67ce4f7da1b13c14c538c87b", "typename": "Person" }], "__typename": "FeedSectionItemPage" }, "$ROOT_QUERY.explore({\"offset\":0}).results.5": { "data": { "type": "id", "generated": false, "id": "51b12c654eca4f37b565cff14f028256", "typename": "FeedSection" }, "__typename": "ExploreFeedItem" }, "$ROOT_QUERY.explore({\"offset\":0})": { "results": [{ "type": "id", "generated": true, "id": "$ROOT_QUERY.explore({\"offset\":0}).results.0", "typename": "ExploreFeedItem" }, { "type": "id", "generated": true, "id": "$ROOT_QUERY.explore({\"offset\":0}).results.1", "typename": "ExploreFeedItem" }, { "type": "id", "generated": true, "id": "$ROOT_QUERY.explore({\"offset\":0}).results.2", "typename": "ExploreFeedItem" }, { "type": "id", "generated": true, "id": "$ROOT_QUERY.explore({\"offset\":0}).results.3", "typename": "ExploreFeedItem" }, { "type": "id", "generated": true, "id": "$ROOT_QUERY.explore({\"offset\":0}).results.4", "typename": "ExploreFeedItem" }, { "type": "id", "generated": true, "id": "$ROOT_QUERY.explore({\"offset\":0}).results.5", "typename": "ExploreFeedItem" }], "offset": null, "__typename": "Explore" }, "ROOT_QUERY": { "explore({\"offset\":0})": { "type": "id", "generated": true, "id": "$ROOT_QUERY.explore({\"offset\":0})", "typename": "Explore" } } } } }, "store": {}, "initialState": { "search": null, "shareOverlay": { "isOpen": false, "view": "INITIAL", "share_link": "", "assetId": "" } }, "initialProps": { "reqHeaders": { "cf-ipcountry": "US" } } } }, "page": "/", "pathname": "/", "query": { "query": {}, "location": { "origin": "http:", "href": "http:/" } }, "buildId": "6326fa3d-f9ad-4ccd-a5ba-ea38a0c4bf34", "assetPrefix": "", "runtimeConfig": { "GRAPHQL_URI": "https://gateway-production.dubsmash.com/graphql", "FACEBOOK_APP_ID": "1001318326550221", "DMAC_KEY": "BRWv#=xrk)mNJH4Q$3o7f(nbik7Tf9$maN2y/F96", "KINESIS_REGION": "eu-west-1", "KINESIS_ACCESS_KEY_ID": "AKIAI7I5X45ULS6OLVTA", "KINESIS_SECRET_ACCESS_KEY": "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", "KINESIS_STREAM_NAME": "Analytics_Production", "NODE_ENV": "production", "HEROKU_RELEASE_VERSION": "v138", "NEW_APP_COUNTRY_CODES": "GB IE ZA AU", "SENTRY_DSN": "https://76ade69de18d4d279824380282b23852@sentry.io/301366" }, "nextExport": false, "err": null, "chunks": [] }
+    module = {}
+    __NEXT_LOADED_PAGES__ = []
+    __NEXT_LOADED_CHUNKS__ = []
+
+    __NEXT_REGISTER_PAGE = function (route, fn) {
+      __NEXT_LOADED_PAGES__.push({ route: route, fn: fn })
+    }
+
+    __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
+      __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
+    }
+
+    false
   </script>
-
-  <!-- -::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::- -->
-  <!-- Check Javascript support -->
-  <noscript>
-    <p style='text-align: center'>
-      The Invisalign Web Site uses Javascript to provide the best user experience.
-    </p>
-  </noscript>
-  <!--[if lt IE 9]>
-<script src="//dv2c9ihs6hqjp.cloudfront.net/assets/respond.min-f992e5d0cef8c5e1208a4bb5a999a02bc18de8ac4849d4b2cfb63bac46940569.js"></script>
-<![endif]-->
-  <script src="//dv2c9ihs6hqjp.cloudfront.net/assets/trackers-29174ce42300f3e86c95808716405f1df758057618ad9957c60109693f6e3e9a.js"
-    defer="defer"></script>
+  <script async="" id="__NEXT_PAGE__/" src="/_next/6326fa3d-f9ad-4ccd-a5ba-ea38a0c4bf34/page/index.js"></script>
+  <script async="" id="__NEXT_PAGE__/_app" src="/_next/6326fa3d-f9ad-4ccd-a5ba-ea38a0c4bf34/page/_app.js"></script>
+  <script async="" id="__NEXT_PAGE__/_error" src="/_next/6326fa3d-f9ad-4ccd-a5ba-ea38a0c4bf34/page/_error.js"></script>
+  <script src="/_next/static/commons/main-81dcdf7112e2502086e4.js" async=""></script>
 </body>
-<div class='itero-popover inv-popover'>
-  <a class='inv-popover-close' href='#'></a>
-  <p>The iTero digital scanning system eliminates the need for messy putty in your mouth by creating a 3D digital scan
-    of your teeth. It offers a fast and more comfortable experience and it’s more accurate, resulting in a more precise
-    fit from your Invisalign aligners.</p>
-</div>
-
-<div class='vip-doc-popover inv-popover'>
-  <a class='inv-popover-close' href='#'></a>
-  <div class='inv-popover-content'>
-    <div class='container-fluid'>
-      <div class='row doctors-pin'>
-        <div class='col-sm-2'>
-          <span class='doctor-pin-popup vip-pin'>VIP</span>
-        </div>
-        <div class='col-sm-2'>
-          <span class='doctor-pin-popup Dimond-pin'>Diamond</span>
-        </div>
-        <div class='col-sm-2'>
-          <span class='doctor-pin-popup platinum-pin'>Platinum</span>
-        </div>
-        <div class='col-sm-2'>
-          <span class='doctor-pin-popup gold-pin'>Gold</span>
-        </div>
-        <div class='col-sm-2'>
-          <span class='doctor-pin-popup silver-pin'>Silver</span>
-        </div>
-        <div class='col-sm-2'>
-          <span class='doctor-pin-popup bronze-pin'>Bronze</span>
-        </div>
-      </div>
-      <p>A doctor’s overall experience level reflects the relative number of patients he/she has treated with
-        Invisalign<sup>&reg;</sup> aligners. Doctors who have achieved the “Plus” status have more experience within a
-        given level. Doctors who have achieved the VIP status are Valued Invisalign Providers.</p>
-      <p>
-        <span class='doctor-pin-popup all-pin'></span>
-      </p>
-      <p>In addition to treating adults, doctors with a star in their icon also treat teens with Invisalign clear
-        aligners.</p>
-    </div>
-  </div>
-</div>
 
 </html>
