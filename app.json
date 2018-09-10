@@ -3,10 +3,7 @@
   "scripts": {
   },
   "env": {
-    "DOCTOR_ID" : {
-      "description": "the salesforce ID that you want to set leads from your fake web page",
-      "required":true
-    }
+
   },
   "formation": {
     "web": {
@@ -16,9 +13,6 @@
   "addons": [
     {
       "plan": "heroku-postgresql:hobby-dev"
-    },
-    {
-      "plan": "herokuconnect:demo"
     }
   ],
   "buildpacks": [
